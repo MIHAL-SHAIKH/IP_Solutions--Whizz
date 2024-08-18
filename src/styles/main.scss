@@ -1,0 +1,21 @@
+// Import Bootstrap
+@import './node_modules/bootstrap/scss/bootstrap';
+
+// Import custom variables (if any) before Bootstrap for override
+@import 'abstracts/variables';
+
+// Import other custom styles
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/global';
+@import 'layouts/header';
+@import 'layouts/footer';
+@import 'layouts/grid';
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/navbar';
+
+// Import vendor-specific styles
+@import 'vendors/bootstrap';
