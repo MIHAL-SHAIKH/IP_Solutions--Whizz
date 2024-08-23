@@ -1,0 +1,72 @@
+@import "src/styles/abstracts/mixins";
+@import "src/styles/base/typography";
+@import "src/styles/base/global";
+
+.skills{
+    &-col1{
+        .text-wrapper{
+          max-width: 534px;
+        }
+        &__text{
+            @include text-gradient;
+        }
+        &__heading{
+            font-size: $font-size-28-responsive;
+        }
+        &__para{
+            font-size: $font-size-16-responsive;
+        }
+
+    }
+
+
+    &-col2{
+        &__heading{
+            font-size: $font-size-24-responsive;
+        }
+        .tab__heading{
+            font-size: $font-size-18-responsive;
+        }
+        .nav{
+            border: 1px solid $card-border;
+            // background-color: green;
+            border-radius: $border-radius-lg;
+            @include break('lg'){
+      
+                min-width: 210px;
+                min-height: 480px;
+            }
+            @include break('xl'){
+                min-width: 300px;
+                min-height: 500px;
+            }
+            &-link{
+                border-radius: 4px;
+                color: $tab-link;
+                min-width:100%;
+            }
+            &-link.active{
+                color: white;
+                background-color: $color-bright-blue;
+            }
+        }
+        &-grid{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+
+            @include break('sm'){
+            grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include break('md'){
+                grid-template-columns: repeat(3, 1fr);
+            }
+            // gap: 16px; 
+        }
+    }
+}
+// .skills-col2__heading{
+//     font-size: $font-size-24-responsive;
+//     font-weight: 300 !important;
+//     color: red;
+// }

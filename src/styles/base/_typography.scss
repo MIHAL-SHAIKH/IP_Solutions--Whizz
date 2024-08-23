@@ -1,0 +1,40 @@
+@import 'src/styles/abstracts/mixins';
+
+$font-size-10: 0.625rem;  // 10px
+$font-size-12: 0.75rem;  // 12px
+$font-size-14: 0.875rem;  // 14px
+$font-size-16: 1rem;      // 16px
+$font-size-18: 1.125rem;  // 18px
+$font-size-20: 1.25rem;   // 20px
+$font-size-22: 1.375rem;  // 22px
+$font-size-24: 1.5rem;   // 24px
+$font-size-28: 1.75rem; // 28px
+$font-size-30: 1.875rem; // 30px
+$font-size-32: 2rem;    // 32px
+$font-size-35: 2.1875rem; //35px
+$font-size-40: 2.5rem; // 40px
+$font-size-48: 3rem;  // 48px
+$font-size-70: 4.375rem; // 70px
+
+
+$font-scale: 1.1;
+
+$font-size-10-responsive: calc(#{$font-size-10} * #{$font-scale});
+$font-size-12-responsive: calc(#{$font-size-12} * #{$font-scale});
+$font-size-14-responsive: calc(#{$font-size-14} * #{$font-scale});
+$font-size-16-responsive: calc(#{$font-size-16} * #{$font-scale});
+$font-size-18-responsive: calc(#{$font-size-18} * #{$font-scale});
+$font-size-20-responsive: calc(#{$font-size-20} * #{$font-scale});
+$font-size-22-responsive: calc(#{$font-size-22} * #{$font-scale});
+$font-size-24-responsive: calc(#{$font-size-24} * #{$font-scale});
+$font-size-28-responsive: calc(#{$font-size-28} * #{$font-scale});
+$font-size-30-responsive: calc(#{$font-size-30} * #{$font-scale});
+$font-size-32-responsive: calc(#{$font-size-32} * #{$font-scale});
+$font-size-35-responsive: calc(#{$font-size-35} * #{$font-scale});
+$font-size-40-responsive: calc(#{$font-size-40} * #{$font-scale});
+$font-size-48-responsive: calc(#{$font-size-48} * #{$font-scale});
+
+body{
+    font-size: $font-size-16-responsive;
+}
+$font-scale: 10.1;

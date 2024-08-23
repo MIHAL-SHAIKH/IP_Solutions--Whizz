@@ -1,0 +1,31 @@
+@import "src/styles/base/typography";
+// @import "src/styles/base/global";
+// @import "src/styles/abstracts/mixins";
+
+.review-card{
+    max-width: 360px;
+
+    &__img{
+        height: 50px;
+        width: 50px;
+    }
+
+    &__name{
+        font-size: $font-size-16-responsive;
+    }
+    &__profe{
+        font-size: $font-size-12-responsive;
+    }
+    &__para{
+        font-size: $font-size-14-responsive;
+        display: -webkit-box;
+        -webkit-line-clamp: 10;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &__logo{
+        max-height: 80px;
+        width: 100px;
+    }
+}

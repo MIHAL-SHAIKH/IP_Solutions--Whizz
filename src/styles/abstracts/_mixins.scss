@@ -1,0 +1,31 @@
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl:1400px
+);
+
+@mixin break($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+      $min-width: map-get($breakpoints, $breakpoint);
+      @media screen and (min-width: $min-width) {
+        @content;
+      }
+    } @else {
+      @error "Invalid breakpoint: #{$breakpoint}.";
+    }
+  }
+
+
+@mixin myContainer{
+  max-width: 1020px;
+  margin: auto;
+}
+
+@mixin text-gradient {
+  background: linear-gradient(45deg, $color-darkest-blue  0%, $color-bright-blue 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+

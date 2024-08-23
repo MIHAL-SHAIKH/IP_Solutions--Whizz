@@ -1,0 +1,269 @@
+@import "src/styles/base/typography";
+@import "src/styles/base/global";
+@import "src/styles/abstracts/mixins";
+
+.landing{
+    // min-height: 90svh;
+    height: 120svh;
+    background-image: url('../../../../assets/landingSm.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+
+    
+    @include break('sm'){
+      // background-position: top bottom left right;
+      background-image: url('../../../../assets/ogban.png');
+
+    }
+
+    &-textWrapper{
+        max-width: 600px;
+
+        &__heading{
+          @include break('sm'){
+            font-size: 50px;
+          }
+          @include break('md'){
+            font-size: 60px;
+          }
+          @include break('lg') {
+            font-size: $font-size-70;
+            }
+            font-size: 40px;
+        }
+        &__para{
+            font-size: $font-size-16-responsive;
+        }
+    }
+    &-btn__started{
+        padding: 0.4375rem 1.25rem;
+        .icon{
+            font-size: $font-size-16-responsive;
+        }
+    }
+}
+// partners logo
+
+@keyframes slides {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    padding: 25px 0px;
+
+
+    @include break('md'){
+    padding: 45px 0px;
+
+      &:before, &:after {
+        position: absolute;
+        top: 0;
+        content: '';
+        width: 250px;
+        height: 100%;
+        z-index: 2;
+      }
+  
+      &:before {
+        left: 0;
+        background: linear-gradient(to left, rgba(255,255,255,0), rgb(255, 255, 255));
+      }
+      &:after {
+        right: 0;
+        background: linear-gradient(to right, rgba(255,255,255,0), rgb(255, 255, 255));
+      }
+    }
+
+    &_items {
+      animation: 30s slides infinite linear;
+      &-img{
+        height: 130px;
+      }
+    }
+  }
+  
+//partnets logo end
+// skills section start
+
+// skills section end
+// explore section
+
+.explore{
+    // &-inner{
+    //     @include myContainer;
+    // }
+    &__heading{
+        font-size: $font-size-28-responsive;
+    }
+}
+// for glowble
+.swiper{
+
+    &-slide{
+        flex: 0 0 auto;
+    }
+    &-button-next,
+    &-button-prev{
+    
+        height: 50px;
+        width: 50px;
+        border: 1px solid $card-border;
+        color: black;
+        // transform: translateX(-100%);
+    
+        &::after{
+            display: none;
+        }
+    }
+}
+
+// counter
+.counter{
+  @include myContainer;
+  &__para{
+    font-size: $font-size-14-responsive;
+    @include text-gradient;
+  }
+  &__heading{
+    font-size: $font-size-28-responsive;
+  }
+  &-count{
+
+    &__number{
+      color: $color-dark-blue;
+      font-size: $font-size-48-responsive;
+      
+      @include break('sm'){
+        font-size: 60px;
+      }
+    }
+    &__name{
+      color: #6B7280;
+
+    }
+  }
+}
+
+// cto
+.cto{
+  @include myContainer;
+
+  &-img{
+    aspect-ratio: 9 / 11;
+    max-width: 380px;
+
+
+    @include break('md'){
+      max-width: 340px;
+    }
+    
+    @include break('lg'){
+      max-width: 405px;
+    }
+    img{
+    border-radius: $card-img-border-radius-lg;
+    }
+    // height: 636px;
+  }
+  &__stamp{
+    width: 130px;
+  }
+  &__heading{
+    font-size: $font-size-20-responsive;
+    @include break("sm"){
+      font-size: $font-size-24-responsive;
+    }
+  }
+  &__subHeading{
+    font-size: $font-size-18-responsive;
+  }
+  &__para,&__aboutPara,&__read{
+    font-size: $font-size-14-responsive;
+  }
+  
+}
+// why choose section started
+.choose{
+  @include myContainer;
+  @include break('md'){
+    border-radius: $border-radius-lg;
+  }
+  background-image: url('../../../../../src/assets/card2Bannersm.png');
+  // min-height: 453px;
+  background-size: cover;
+  background-position: top;
+  
+  @include break('sm'){
+    
+    min-height: 473px;
+    background-image: url('../../../../../src/assets/cardBanner2.png');
+  }
+  // background: linear-gradient(106.62deg, #2373FF 3.36%, #003792 65.31%);
+
+
+  &__para{
+    font-size: $font-size-14-responsive;
+
+    &-icon{
+      font-size: $font-size-20-responsive;
+    }
+  }
+  &-img{
+    // max-height: 460px;
+
+    max-width: 330px;
+    min-height: 200px;
+    @include break('md'){
+      max-width: 500px;
+      min-height: 260px
+    }
+  }
+}
+// groupded
+
+.grouped{
+    @include myContainer;
+    &-logo{
+      max-width: 120px;
+      
+      @include break('sm'){
+          max-width: 220px;
+        }
+
+        img{
+          max-width: 100px;
+          @include break('sm'){
+            max-width: 190px;
+            }
+        }
+    }
+    &-header{
+      font-size: $font-size-24-responsive;
+      @include break('sm'){
+        font-size: $font-size-28-responsive;
+      }
+    }
+}
+// ask
+
+.ask{
+  max-width: 740px;
+  .accordion-collapse.show{
+    box-shadow: 0px 8px 8px -4px #0d0c0c1c !important;
+  }
+  .accordion-rank{
+    font-size: $font-size-16-responsive;
+  }
+  &__heading{
+    font-size: $font-size-28-responsive;
+  }
+}
+
+
+

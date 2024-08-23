@@ -1,1 +1,115 @@
-<p class="bg-black">navbar works!</p>
+<nav class="navbar bg-body-tertiary sticky-top py-md-3 position-relative">
+    <div class="container-fluid navbar-container">
+      <div class="d-flex navbar-container-wrapper mx-auto justify-content-between w-100">
+        <div class="courses d-flex gap-4">
+          <a class="navbar-icon d-flex align-items-center">
+            <img class="navbar-icon__img img-fluid object-fit-cover" src="../../../assets/image.png" alt="">
+          </a>
+          <div class="vr d-none d-md-inline-block"></div>
+
+          <!-- <input class="megaMenu-box d-none" id="mega" type="checkbox" name="mega">
+            <button class="d-none d-lg-inline-block megaMenu_btn courses-dropdown__btn btn text-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span>
+                Explore Courses 
+                <i class="ri-arrow-down-s-line"></i>
+              </span>
+            </button> -->
+            <li class="nav-item dropdown ktm-mega-menu position-static d-none d-lg-flex align-items-center megaMenu_btn courses-dropdown__btn btn text-secondary dropdown-toggle">
+              <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                <span>
+                  Explore Courses 
+                  <i class="ri-arrow-down-s-line"></i>
+                </span>
+              </a>
+              <!-- Mega Menu -->
+              <div class="dropdown-menu mega-menu">
+                <div class="w-100 mb-3">
+                  <h3 class="fw-normal mega-menu__heading" >Explore All Course</h3>
+                </div>
+                <div class="grid-container h-100">
+                  <div class="cols cols-courses w-100">
+                    <!-- tab links -->
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                      <button class="mega-menu__links d-flex justify-content-between active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                        Course
+                        <span class="icons d-none"><i class="ri-arrow-right-line"></i></span>
+                      </button>
+                      <button class="mega-menu__links d-flex justify-content-between" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                        Course
+                        <span class="icons d-none"><i class="ri-arrow-right-line"></i></span>
+                      </button>
+                      <button class="mega-menu__links d-flex justify-content-between" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                        Course
+                        <span class="icons d-none"><i class="ri-arrow-right-line"></i></span>
+                      </button>
+                      <button class="mega-menu__links d-flex justify-content-between" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                        Course
+                        <span class="icons d-none"><i class="ri-arrow-right-line"></i></span>
+                      </button>
+                    </div>
+                    <!-- tab links end -->
+                  </div>
+                  <div class="cols cols-cards w-100 overflow-y-scroll">
+                    <!-- content of tabs -->
+                    <div class="d-flex align-items-start">
+
+                      <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                          <div class="row gap-4">
+                            <div class="w-auto">
+                              <app-course-card-small></app-course-card-small>
+                            </div>
+                            <div class="w-auto">
+                              <app-course-card-small></app-course-card-small>
+                            </div>
+                            <div class="w-auto">
+                              <app-course-card-small></app-course-card-small>
+                            </div>
+                            <div class="w-auto">
+                              <app-course-card-small></app-course-card-small>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
+                        <!-- <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div> -->
+                      </div>
+                    </div>
+                    <!-- content of tabs end -->
+                  </div>
+                  <div class="cols cols-popular w-100">
+                    <div class="w-100 mb-3">
+                      <h4 class="col-popular__heading fw-medium">
+                        Popular Course
+                      </h4>
+                    </div>
+                    <!-- <div class="w-100"> -->
+                      <app-course-card></app-course-card>
+                    <!-- </div> -->
+                  </div>
+                </div>
+                
+              </div>
+           </li>
+            <!-- <div class="w-100 bg-black vh-100 start-0 top-0 position-absolute" style="transform: translateY(10%);">
+
+            </div> -->
+
+          <div class="search-wrapper d-none d-md-flex align-items-center position-relative">
+            <input type="text" class="form-control search-input shadow-none fw-medium" placeholder="Search...">
+            <i class="ri-search-line search-icon position-absolute"></i>
+          </div>          
+        </div>
+        <div class="help d-flex align-items-center">
+          <button class="navbar-toggler bg-black text-white d-flex justify-content-center align-items-center rounded-3 me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <i class="ri-menu-5-line"></i>
+          </button>
+          <div class="d-none d-md-inline-block text-black">
+            <p class="mb-0">Need Help?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</nav>
+<app-offcanvas></app-offcanvas>

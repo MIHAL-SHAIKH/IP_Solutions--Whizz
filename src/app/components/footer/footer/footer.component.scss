@@ -1,0 +1,80 @@
+// bg-#262626
+@import 'src/styles/base/typography';
+li,a{cursor: pointer;}
+.footer{
+    padding: 5% 5% 0 5%;
+    background-color:#262626;
+    font-size: $font-size-12-responsive;
+    &-about{
+
+        @include break('sm'){
+            font-size: $font-size-16-responsive;
+        }
+    }
+    &-icon{
+        font-size: $font-size-18-responsive;
+    }
+    &__logo{
+        max-width: 300px;
+        min-width: 200px;
+        max-height: 200px;
+        margin-bottom: 2rem;
+        img{
+            max-width: 160px;
+
+            @include break('sm'){
+                max-width: 250px;
+            }
+        }
+    }
+    // &-links{
+    //     font-size: $font-size-14-responsive;
+
+    // }
+    // footer-about__links
+
+
+
+    &-courses__heading{
+        font-size: $font-size-18-responsive;
+    }
+    &-courses__link{
+        font-size: $font-size-12-responsive;
+        padding: 5px 16px 5px 16px;
+
+        @include break('sm'){
+            font-size: $font-size-14-responsive;
+            padding: 6px 19px 6px 19px;
+        }
+        background-color: #2E2E31;
+    }
+    &-type{
+        .ul{
+            @include break('sm'){
+                list-style-type: disc;
+            }
+        }
+        &__link{
+            
+            @include break('sm'){
+                font-size: $font-size-16-responsive;
+            }
+            color: #71717A;
+            transition: all 300ms ease;
+            &:hover{
+                color: #57575c;
+            }
+        }
+    }
+
+    &-copyright{
+        font-size: $font-size-10-responsive;
+        @include break('sm'){
+            font-size: $font-size-12-responsive;
+        }
+    }
+    /* CSS */
+ul .footer-type__link:first-child {
+  list-style: none;
+}
+}

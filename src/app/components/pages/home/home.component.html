@@ -1,1 +1,301 @@
-<p class="bg-black">home works!</p>
+<section class="landing container-fluid position-relative">
+  <!-- <img class="position-absolute w-100 h-auto z-1" src="../../../../assets/ogban.png" alt=""> -->
+  <div
+    class="row h-100 align-items-baseline align-items-sm-center justify-content-start">
+    <div class="col-12 col-sm-7 col-lg-6">
+      <div class="landing-textWrapper text-black mx-auto mt-2">
+        <h1 class="landing-textWrapper__heading text-uppercase fw-bold lh-1">
+          bring your your goals into focus
+        </h1>
+        <p class="landing-textWrapper__para">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti,
+          numquam.
+        </p>
+        <div class="d-flex justify-content-start w-100 mt-5">
+          <button class="landing-btn__started btn bg-black text-white">
+            get started
+            <i class="icon ri-arrow-right-up-line ps-2"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- partners section -->
+<section class="logos overflow-hidden text-nowrap position-relative">
+  <div class="logos_items d-flex gap-5">
+    <div *ngFor="let num of [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]">
+      <img
+        class="logos_items-img"
+        src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fencrypted-tbn1.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcQnN19E18xtM23VtnQAxytEgzdujZ3XKCtnFrfzdXp-tBn1TKKJ&psig=AOvVaw08mAbvAmg0Q3pZ3Hw47TtI&ust=1724304254172000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKjEm4ishYgDFQAAAAAdAAAAABAE"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- partners section end -->
+
+<section class="explore container-lg px-lg-4">
+  <div class="explore-inner position-relative">
+    <div class="row py-2">
+      <h2 class="explore__heading d-inline-flex text-black">
+        Explore our Top leading courses
+      </h2>
+    </div>
+    <div class="swiper mySwiper w-100 z-1">
+      <div class="swiper-wrapper d-flex w-auto pt-2 pb-5">
+        <div class="swiper-slide d-flex justify-content-center">
+          <app-course-card></app-course-card>
+        </div>
+        <div class="swiper-slide d-flex justify-content-center">
+          <app-course-card></app-course-card>
+        </div>
+        <div class="swiper-slide d-flex justify-content-center">
+          <app-course-card></app-course-card>
+        </div>
+        <div class="swiper-slide d-flex justify-content-center">
+          <app-course-card></app-course-card>
+        </div>
+        <div class="swiper-slide d-flex justify-content-center">
+          <app-course-card></app-course-card>
+        </div>
+        <div class="swiper-slide d-flex justify-content-center">
+          <app-course-card></app-course-card>
+        </div>
+      </div>
+    </div>
+    <div
+      class="swiper-button-next ratio-1x1 rounded-circle bg-white fs-5 d-none d-lg-flex position-absolute end-0"
+      style="transform: translateX(50%)"
+    >
+      <i class="ri-arrow-right-line"></i>
+    </div>
+    <div
+      class="swiper-button-prev ratio-1x1 rounded-circle bg-white fs-5 d-none d-lg-flex position-absolute start-0 translate-middle-x"
+    >
+      <i class="ri-arrow-left-line"></i>
+    </div>
+
+    <!-- <div class="swipers-button-next ratio-1x1 rounded-circle position-absolute top-50 translate-middle-y z-3 text-white translate-middle-x end-0"><i class="ri-arrow-right-line"></i></div>
+      <div class="swipers-button-prev ratio-1x1 rounded-circle position-absolute top-50 translate-middle-y z-3 text-white translate-middle-x start-0"><i class="ri-arrow-left-line"></i></div> -->
+  </div>
+</section>
+<!-- skill section started -->
+<app-skills-section></app-skills-section>
+<!-- skill section end  -->
+<app-started-section></app-started-section>
+
+<!-- counter section -->
+<section id="counter" class="counter sec-padding py-5 container-fluid">
+  <div class="Mycontainer">
+    <div class="row text-center mb-5">
+      <p class="counter__para">Your goals are our goals</p>
+      <h3 class="counter__heading">
+        Invest in yourself today. Unlock
+        success for a lifetime.
+      </h3>
+    </div>
+    <div class="row mt-5 gap-3 gap-sm-4 gap-md-5">
+      <div class="col-12 col-sm text-center">
+        <div class="counter-count">
+          <h2 class="counter-count__number fw-bolder">1,50,600</h2>
+          <p class="counter-count__name mb-0">Happy Clients</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm text-center">
+        <div class="count">
+          <h2 class="counter-count__number fw-bolder">4.5/5</h2>
+          <p class="counter-count__name mb-0">Awards</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm text-center">
+        <div class="count">
+          <h2 class="counter-count__number fw-bolder">50%</h2>
+          <p class="counter-count__name mb-0">Total Hours</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm text-center">
+        <div class="count">
+          <span class="counter-count__number fw-bolder">3,600+</span>
+          <p class="counter-count__name mb-0">Projects Complete</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- counter section end -->
+
+<!-- javed  Chaurasiya section -->
+<section class="cto py-5">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-auto">
+        <div class="cto-img mx-auto mx-md-0">
+          <img
+            class="w-100 h-100 object-fit-cover overflow-hidden"
+            src="./assets/javed.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="col-12 col-md">
+        <div class="text-start p-3">
+          <div class="cto-textWrapper">
+            <h3 class="cto__heading fw-medium mb-4 text-center text-md-start">Meet CTO Javed Khan</h3>
+            <h5 class="cto__subHeading fw-normal mb-3">
+              Experts In It Networking And Administration Training And CCIE BOOT
+              CAMP (R&S, Voice, Security And Service Provider).
+            </h5>
+            <p class="cto__para mb-0 fw-normal lh-sm">
+              Triple CCIE widely recognized as one of the world’s leading Cisco
+              instructors, he takes CCIE Routing and Switching training, CCIE
+              Security training, CCNP Security training and CCNP Voice training
+              batches in IP Solutions. He also extensively travels world wide to
+              deliver training in other countries.
+            </p>
+            <p class="cto__aboutPara fw-normal lh-sm">
+              <span class="d-block">JAVED KHAN (CCIE# 15427):</span>
+              <span
+                >TRIPLE CCIE: R&S, SP & Security is IPSOL’s Lead CCIE training
+                expert!</span
+              >
+            </p>
+            <div class="mb-5">
+              <a class="cto__read border-bottom text-black"> Read More </a>
+            </div>
+          </div>
+          <div class="cto__stamp h-auto ratio ratio-4x3">
+            <img
+              class="img-fluid object-fit-contain"
+              src="./assets/stamp.png"
+              alt="logo"
+            />
+          </div>
+          <p class="text-uppercase text-black">Authorised partner in Iran</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- javed  Chaurasiya section end -->
+
+<section class="container-fluid px-0 p-md-1 w-100">
+  <div class="choose row h-100">
+    <!-- <div class="row h-100 bg-danger"> -->
+      <div class="col-12 col-sm-7">
+        <div class="text-start text-white py-4 p-lg-5 pe-0">
+          <h3 class="choose__heading mb-4">Why choose IPsolutions?</h3>
+          <div *ngFor="let i of [1, 1, 1, 1, 1]">
+            <div class="choose__para d-flex mb-2 fw-normal">
+              <span class="choose__para-icon me-3 h-100 align-self-start"
+                ><i class="ri-check-double-line"></i
+              ></span>
+              <span
+                >Biggest Infrastructure ructure for Cisco certification
+                training</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-5 d-flex align-items-end px-4 px-sm-1">
+        <div class="choose-img pt-3 pt-sm-5 d-flex align-items-end mx-auto">
+          <img
+            class="w-100 h-auto object-fit-contain"
+            src="./assets/cardProfile.png"
+            alt=""
+          />
+        </div>
+      </div>
+    <!-- </div> -->
+  </div>
+</section>
+
+<!-- what our learners say -->
+<section>
+  <!-- <app-user-card></app-user-card> -->
+</section>
+
+<section class="grouped container-fluid my-5">
+  <div class="grouped-wrapper">
+    <div class="row justify-content-center flex-wrap">
+      <div class="col-12 text-center">
+        <h6 class="grouped-header mb-3">
+          Join IP Solutions graduates at top-tier companies
+        </h6>
+      </div>
+      <!-- <div> -->
+      <div
+        *ngFor="let i of [1, 2, 3, 4, 5, 8, 7]"
+        class="grouped-logo d-flex justify-content-center align-items-center w-100 h-auto"
+      >
+        <img
+          class="w-100 h-auto object-fit-cover"
+          src="./assets/logos/logo{{ i }}.jpg"
+          alt=""
+        />
+      </div>
+      <!-- </div> -->
+    </div>
+  </div>
+</section>
+
+<!-- frequently aske section -->
+<section class="ask container-fluid">
+  <div class="ask-wrapper">
+    <div class="row justify-content-center mb-5">
+      <div class="col-auto">
+        <h3 class="ask__heading fw-medium">Frequently Asked Question</h3>
+      </div>
+    </div>
+    <div class="row gap-3 accordion" id="accordionExample">
+      <div *ngFor="let i of [1, 2, 3, 4, 5, 6, 7]">
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              [attr.data-bs-target]="'#collapse' + i"
+              [attr.aria-controls]="'collapse' + i"
+            >
+              <span class="accordion-rank fw-semibold me-2 text-uppercase"
+                >Q.</span
+              >
+              Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit?
+            </button>
+          </div>
+          <div
+            [ngClass]="{ show: i === 1 }"
+            [id]="'collapse' + i"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi iusto rerum quas eligendi qui delectus soluta beatae
+                expedita omnis magnam! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Id quas soluta nam? Blanditiis molestiae
+                voluptatem expedita, laudantium perspiciatis cumque. Recusandae
+                dolorum alias exercitationem, quod rerum ut! Sint vitae
+                dignissimos natus?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+      <div class="text-center">
+        <p class="fw-light">
+          Got more questions?
+          <a class="fw-semibold border-bottom text-black border-black"
+            >Contact Us</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
