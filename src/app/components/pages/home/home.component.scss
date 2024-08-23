@@ -4,16 +4,16 @@
 
 .landing{
     // min-height: 90svh;
-    height: 120svh;
-    background-image: url('../../../../assets/landingSm.png');
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: bottom right;
+    min-height: 100svh;
+    // background-image: url('../../../../assets/landingSm.png');
+    // background-size:cover;
+    // background-repeat: no-repeat;
+    // background-position: bottom right;
 
     
     @include break('sm'){
       // background-position: top bottom left right;
-      background-image: url('../../../../assets/ogban.png');
+      // background-image: url('../../../../assets/ogban.png');
 
     }
 
