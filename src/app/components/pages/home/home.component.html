@@ -1,7 +1,15 @@
-<section class="landing container-fluid position-relative overflow-hidden bg-dark px-0">
-  <img class="w-100 h-auto object-fit-cover z-1" style="min-height: 100%;" src="../../../../assets/ogban.png" alt="">
-  <div class="landing-textWrapper text-black position-absolute top-50 translate-middle-y">
-    <h1 class="landing-textWrapper__heading text-uppercase fw-bold lh-1">
+<section
+  class="landing container-fluid position-relative overflow-hidden bg-dark px-0"
+>
+<picture>
+  <!-- Image for small devices (up to 767px) -->
+  <source srcset="../../../../assets/landingSm.png" media="(max-width: 767px)">
+  <!-- Default image for medium and larger devices (768px and up) -->
+  <img src="../../../../assets/ogban.png" class="w-100 h-auto object-fit-cover z-1" style="min-height: 100%;" alt="">
+</picture>
+
+  <div class="landing-textWrapper text-black position-absolute p-md-3">
+    <h1 class="landing-textWrapper__heading text-uppercase fw-semibold">
       bring your your goals into focus
     </h1>
     <p class="landing-textWrapper__para">
@@ -16,7 +24,7 @@
     </div>
   </div>
 </section>
-  <!-- <div
+<!-- <div
     class="row h-100 align-items-baseline align-items-sm-center justify-content-start">
     <div class="col-12 col-sm-7 col-lg-6">
       <div class="landing-textWrapper text-black mx-auto mt-2">
@@ -108,8 +116,7 @@
     <div class="row text-center mb-5">
       <p class="counter__para">Your goals are our goals</p>
       <h3 class="counter__heading">
-        Invest in yourself today. Unlock
-        success for a lifetime.
+        Invest in yourself today. Unlock success for a lifetime.
       </h3>
     </div>
     <div class="row mt-5 gap-3 gap-sm-4 gap-md-5">
@@ -158,7 +165,9 @@
       <div class="col-12 col-md">
         <div class="text-start p-3">
           <div class="cto-textWrapper">
-            <h3 class="cto__heading fw-medium mb-4 text-center text-md-start">Meet CTO Javed Khan</h3>
+            <h3 class="cto__heading fw-medium mb-4 text-center text-md-start">
+              Meet CTO Javed Khan
+            </h3>
             <h5 class="cto__subHeading fw-normal mb-3">
               Experts In It Networking And Administration Training And CCIE BOOT
               CAMP (R&S, Voice, Security And Service Provider).
@@ -199,31 +208,31 @@
 <section class="container-fluid px-0 p-md-1 w-100">
   <div class="choose row h-100">
     <!-- <div class="row h-100 bg-danger"> -->
-      <div class="col-12 col-sm-7">
-        <div class="text-start text-white py-4 p-lg-5 pe-0">
-          <h3 class="choose__heading mb-4">Why choose IPsolutions?</h3>
-          <div *ngFor="let i of [1, 1, 1, 1, 1]">
-            <div class="choose__para d-flex mb-2 fw-normal">
-              <span class="choose__para-icon me-3 h-100 align-self-start"
-                ><i class="ri-check-double-line"></i
-              ></span>
-              <span
-                >Biggest Infrastructure ructure for Cisco certification
-                training</span
-              >
-            </div>
+    <div class="col-12 col-sm-7">
+      <div class="text-start text-white py-4 p-lg-5 pe-0">
+        <h3 class="choose__heading mb-4">Why choose IPsolutions?</h3>
+        <div *ngFor="let i of [1, 1, 1, 1, 1]">
+          <div class="choose__para d-flex mb-2 fw-normal">
+            <span class="choose__para-icon me-3 h-100 align-self-start"
+              ><i class="ri-check-double-line"></i
+            ></span>
+            <span
+              >Biggest Infrastructure ructure for Cisco certification
+              training</span
+            >
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-5 d-flex align-items-end px-4 px-sm-1">
-        <div class="choose-img pt-3 pt-sm-5 d-flex align-items-end mx-auto">
-          <img
-            class="w-100 h-auto object-fit-contain"
-            src="./assets/cardProfile.png"
-            alt=""
-          />
-        </div>
+    </div>
+    <div class="col-12 col-sm-5 d-flex align-items-end px-4 px-sm-1">
+      <div class="choose-img pt-3 pt-sm-5 d-flex align-items-end mx-auto">
+        <img
+          class="w-100 h-auto object-fit-contain"
+          src="./assets/cardProfile.png"
+          alt=""
+        />
       </div>
+    </div>
     <!-- </div> -->
   </div>
 </section>

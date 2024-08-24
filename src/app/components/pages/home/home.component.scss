@@ -18,17 +18,29 @@
     }
 
     &-textWrapper{
+      left: 5%;
+      top: 8%;
+      
+      @include break('sm'){
+        
+        top: 10%;
+        max-width: 430px;
+      }
+      
+      @include break('lg'){
         max-width: 600px;
-
+      }
         &__heading{
+          line-height: 0.9em;
           @include break('sm'){
             font-size: 50px;
           }
           @include break('md'){
+           
             font-size: 60px;
           }
           @include break('lg') {
-            font-size: $font-size-70;
+            font-size: $font-size-85;
             }
             font-size: 40px;
         }
