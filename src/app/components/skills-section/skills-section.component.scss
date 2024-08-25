@@ -27,6 +27,10 @@
         .tab__heading{
             font-size: $font-size-18-responsive;
         }
+        &__linkWrapper{
+            // max-height: 64vh;
+            max-height: 450px;
+        }
         .nav{
             border: 1px solid $card-border;
             // background-color: green;
@@ -53,6 +57,7 @@
         &-grid{
             display: grid;
             grid-template-columns: repeat(1, 1fr);
+            align-items: stretch;
 
             @include break('sm'){
             grid-template-columns: repeat(2, 1fr);

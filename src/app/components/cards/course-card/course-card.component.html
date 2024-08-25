@@ -8,23 +8,23 @@
       />
     </div>
     <div class="py-3">
-      <h5 class="course-card__title mb-3">Card title</h5>
+      <h5 class="course-card__title mb-3">{{card?.title}}</h5>
       <p class="course-card__para fw-light mb-0 text-wrap">
-        In CCNA Routing & Switching, you will gain knowledge on how to build
-        simple network, establishment of internet connectivity, mana
+       {{card?.description}}
       </p>
     </div>
     <div class="d-flex align-items-center gap-3 mb-4 fw-semibold">
       <div class="course-card__rating">
         <i class="ri-star-fill text-warning"></i>
-        <span class="ms-1">4.5</span>
+        <span class="ms-1">{{card?.rating}}</span>
       </div>
       <div class="vr"></div>
       <div class="course-card__time">
         <i class="ri-time-line"></i>
-        <span class="ms-1 text-capitalize">4.5 hrs</span>
+        <span class="ms-1 text-capitalize">{{card?.duration}}</span>
       </div>
     </div>
+
     <button class="btn course-card__enroll btn-primary text-capitalize w-100">
       enrole now
     </button>

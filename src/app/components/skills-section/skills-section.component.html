@@ -9,15 +9,32 @@
         </div>
         <div class="col-12 skills-col2">
             <div class="d-flex align-items-start justify-content-center justify-content-md-start">
-                <div class="d-none d-lg-inline-block nav flex-column nav-pills me-3 text-start p-3 overflow-y-scroll" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <div class="d-none d-lg-inline-block nav flex-column nav-pills me-3 text-start p-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <h3 class="skills-col2__heading text-capitalize text-black">catergory</h3>
                     <hr>
-                    <div class="py-2">
-                        <button class="nav-link text-start active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
+                    <div class="py-2 overflow-y-scroll skills-col2__linkWrapper">
+                        <!-- <button class="nav-link text-start active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
                         <button class="nav-link text-start" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
-                        <!-- <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled>Disabled</button> -->
+                        <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled>Disabled</button>
                         <button class="nav-link text-start" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
-                        <button class="nav-link text-start" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+                        <button class="nav-link text-start" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button> -->
+                        <!-- <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical"> -->
+                            <button 
+                            *ngFor="let tab of tabs" 
+                            class="nav-link text-start" 
+                            [class.active]="tab.active" 
+                            [id]="'v-pills-' + tab.id + '-tab'" 
+                            data-bs-toggle="pill" 
+                            [attr.data-bs-target]="'#v-pills-' + tab.id" 
+                            type="button" 
+                            role="tab" 
+                            [attr.aria-controls]="'v-pills-' + tab.id" 
+                            [attr.aria-selected]="tab.active"
+                            (click)="setActiveTab(tab.id)"
+                          >
+                            {{ tab.title }}
+                          </button>
+                          <!-- </div> -->
                     </div>
                 </div>
                 <div class="tab-content w-100" id="v-pills-tabContent">
@@ -36,11 +53,45 @@
                             </ul>
                           </div>
                     </div>
-                  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div 
+                          *ngFor="let tab of tabs" 
+                          class="tab-pane fade" 
+                          [class.show]="tab.active" 
+                          [class.active]="tab.active" 
+                          [id]="'v-pills-' + tab.id" 
+                          role="tabpanel" 
+                          [attr.aria-labelledby]="'v-pills-' + tab.id + '-tab'" 
+                          tabindex="0"
+                        >
+                        <div class="skills-col2-grid d-grid">
+                            <div *ngFor="let cards of tab.content.slice(0,6)" class="p-2 d-flex justify-content-center">
+                                <app-course-card [card]="cards"></app-course-card>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 py-4">
+                    <button class="mx-auto d-block btn btn-dark">
+                        Explore More
+                        <span>
+                            <i class="ri-search-eye-line ms-1"></i>
+                        </span>
+                    </button>
+                </div>
+                  <!-- <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
                     <div class="skills-col2-grid d-grid">
                         <div *ngFor="let i of [1,2,3,4,5,6]" class="p-2 d-flex justify-content-center">
                             <app-course-card></app-course-card>
                         </div>
+                    </div>
+                    <div class="col-12 py-4">
+                        <button class="mx-auto d-block btn btn-dark">
+                            Explore More
+                            <span>
+                                <i class="ri-search-eye-line ms-1"></i>
+                            </span>
+                        </button>
                     </div>
                   </div>
                   <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
@@ -52,7 +103,7 @@
                   </div>
                   <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">...</div>
                   <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
-                  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+                  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div> -->
                 </div>
               </div>
         </div>
