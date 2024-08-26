@@ -3,3 +3,28 @@
 // @media (min-width: 768px) {};  // general desktop && tablet styles if needed
 // @media (min-width: 768px) and (max-width: 1024px) {}; // only tablet styles
 // @media (min-width: 1025px) {}; // start with desktop styling
+
+// function(){
+//     display: -webkit-box;
+//     -webkit-line-clamp: 10;
+//     -webkit-box-orient: vertical;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+// }
+
+// Function to return line-clamp styles
+// @function line-clamp($lines) {
+//     @return (
+//       display: -webkit-box,
+//       -webkit-line-clamp: $lines,
+//       -webkit-box-orient: vertical,
+//       overflow: hidden,
+//       text-overflow: ellipsis
+//     );
+//   }
+//   // Example of using the function in a mixin
+//   @mixin apply-line-clamp($lines) {
+//     @include line-clamp($lines);
+//   }
+  
+  

@@ -1,4 +1,10 @@
-<nav class="navbar bg-body-tertiary sticky-top py-md-3 position-relative">
+<nav [ngClass]="{
+  'navbar-hidden': !isNavbarVisible,
+  'navbar-visible': isNavbarVisible,
+  'navbar-shadow': hasShadow
+}" 
+     class="navbar bg-body-tertiary position-fixed w-100 py-0">
+     <div class="w-100 position-relative h-100 py-2 py-md-4">
     <div class="container-fluid navbar-container">
       <div class="d-flex navbar-container-wrapper mx-auto justify-content-between w-100">
         <div class="courses d-flex gap-4">
@@ -6,14 +12,6 @@
             <img class="navbar-icon__img img-fluid object-fit-cover" src="../../../assets/image.png" alt="">
           </a>
           <div class="vr d-none d-md-inline-block"></div>
-
-          <!-- <input class="megaMenu-box d-none" id="mega" type="checkbox" name="mega">
-            <button class="d-none d-lg-inline-block megaMenu_btn courses-dropdown__btn btn text-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span>
-                Explore Courses 
-                <i class="ri-arrow-down-s-line"></i>
-              </span>
-            </button> -->
             <li class="nav-item dropdown ktm-mega-menu position-static d-none d-lg-flex align-items-center text-secondary dropdown-toggle">
               <a class="nav-link dropdown-toggle btn megaMenu_btn py-2 px-3 courses-dropdown__btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
                 <span>
@@ -55,19 +53,11 @@
 
                       <div class="tab-content w-100" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
-                          <div class="row" style="gap: 10px 0;">
-                            <div class="col-5" *ngFor="let i of [1,1,1,1]">
+                          <div class="cardSm-grid">
+                            <div *ngFor="let i of [1,1,1,1]">
+                              <!-- style="flex: 0 0 calc(50% - 3rem);" -->
                               <app-course-card-small></app-course-card-small>
                             </div>
-                            <!-- <div class="w-50">
-                              <app-course-card-small></app-course-card-small>
-                            </div>
-                            <div class="w-50">
-                              <app-course-card-small></app-course-card-small>
-                            </div>
-                            <div class="w-50">
-                              <app-course-card-small></app-course-card-small>
-                            </div> -->
                           </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
@@ -129,5 +119,7 @@
         </div>
       </div>
     </div>
+     </div>
+
 </nav>
 <app-offcanvas></app-offcanvas>

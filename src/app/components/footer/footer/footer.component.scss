@@ -20,10 +20,13 @@ li,a{cursor: pointer;}
         max-height: 200px;
         margin-bottom: 2rem;
         img{
-            max-width: 160px;
-
+            max-width: 120px;
             @include break('sm'){
-                max-width: 250px;
+                max-width: 160px;
+            }
+
+            @include break('md'){
+                max-width: 200px;
             }
         }
     }
@@ -70,16 +73,6 @@ li,a{cursor: pointer;}
             font-size: $font-size-12-responsive;
         }
     }
-    /* CSS */
-// ul .footer-type__link:first-child {
-//   list-style: none;
-// }
-// .ul .footer-type__link::before {
-//   content: "•"; 
-//   font-size: $font-size-16-responsive; 
-//   margin-right: 10px; 
-//   color: rgb(237, 66, 66); 
-// }
 }
 
 

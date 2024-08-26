@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 import { footer } from 'src/app/demoData';
 
 @Component({
@@ -10,8 +10,6 @@ export class NavbarComponent {
   courses: any = footer.courses;
   searchQuery: string = '';
   showDropdown: boolean = false;
-  // searchQuery
-
 
   searchItems: string[] = [
     'Angular Tutorial',
@@ -23,17 +21,37 @@ export class NavbarComponent {
   ];
 
   filteredItems: string[] = [...this.searchItems];
+  recommendations: string[] = ['History 1', 'History 2', 'Recommendation 1'];
 
-// searchQuery: string = '';
-recommendations: string[] = ['History 1', 'History 2', 'Recommendation 1'];
-
-selectRecommendation(item: string) {
-  this.searchQuery = item;
-  console.warn('clicked',item)
-}
+  private lastScrollTop = 0;
+  public isNavbarVisible = true;
+  public hasShadow = false; // New property to control shadow
 
   constructor() {
     console.log(footer, 'footer');
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll() {
+    const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScrollTop > this.lastScrollTop) {
+      // Scrolling down
+      this.isNavbarVisible = false;
+    } else {
+      // Scrolling up
+      this.isNavbarVisible = true;
+    }
+
+    // Add shadow if scrolled more than 50 pixels
+    this.hasShadow = currentScrollTop > 50;
+
+    this.lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
+  }
+
+  selectRecommendation(item: string) {
+    this.searchQuery = item;
+    console.warn('clicked', item);
   }
 
   filterResults(event: Event) {

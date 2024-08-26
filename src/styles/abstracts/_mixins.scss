@@ -1,3 +1,5 @@
+@import '../abstracts/functions';
+
 $breakpoints: (
   sm: 576px,
   md: 768px,
@@ -18,7 +20,7 @@ $breakpoints: (
   }
 
 
-@mixin myContainer{
+  @mixin myContainer{
   max-width: 1020px;
   margin: auto;
 }
@@ -28,5 +30,12 @@ $breakpoints: (
   background: linear-gradient(90deg, $color-darkest-blue, $accent-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@mixin line-clamp($lines) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 

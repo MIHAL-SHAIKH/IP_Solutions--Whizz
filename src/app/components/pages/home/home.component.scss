@@ -22,11 +22,11 @@
 
     &-textWrapper{
       left: 5%;
-      top: 8%;
+      top: 12%;
       
       @include break('sm'){
         
-        top: 10%;
+        top: 16%;
         max-width: 430px;
       }
       
@@ -242,7 +242,7 @@
   &-img{
     // max-height: 460px;
 
-    max-width: 330px;
+    max-width: 280px;
     min-height: 200px;
     @include break('md'){
       max-width: 500px;
@@ -254,7 +254,13 @@
 .learner{
   padding: 6% 0;
   &-header{
-    font-size: $font-size-35-responsive;
+    font-size: $font-size-28-responsive;
+    @include break('md'){
+      font-size: $font-size-30-responsive;
+    }
+    @include break('lg'){
+      font-size: $font-size-35-responsive;
+    }
     margin-bottom: 3%;
   }
   &-card_infi{
@@ -289,15 +295,42 @@
 // ask
 
 .ask{
+  .accordion{
+    font-size: $font-size-12-responsive;
+    @include break('md'){
+      font-size: $font-size-14-responsive;
+    }
+    &-button{
+      font-size: $font-size-12-responsive;
+      @include break('md'){
+        font-size: $font-size-14-responsive;
+      }
+    }
+
+  }
   max-width: 740px;
   .accordion-collapse.show{
     box-shadow: 0px 8px 8px -4px #0d0c0c1c !important;
   }
   .accordion-rank{
-    font-size: $font-size-16-responsive;
+    font-size: $font-size-14-responsive;
+    @include break('md'){
+      font-size: $font-size-16-responsive;
+    }
   }
   &__heading{
+    font-size: $font-size-24-responsive;
+
+    @include break('md'){
     font-size: $font-size-28-responsive;
+    }
+  }
+  .got-more{
+    font-size: $font-size-12-responsive;
+
+    @include break('md'){
+      font-size: $font-size-14-responsive;
+    }
   }
 }
 

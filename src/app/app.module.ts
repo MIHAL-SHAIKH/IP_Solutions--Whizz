@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';  // Import FormsModule here
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,7 +14,6 @@ import { StartedSectionComponent } from './components/pages/started-section/star
 import { SkillsSectionComponent } from './components/skills-section/skills-section.component';
 import { CourseCardSmallComponent } from './components/cards/course-card-small/course-card-small.component';
 import { CoursePageComponent } from './components/pages/course-page/course-page.component';
-// import { CourseCardSmallComponent } from './components/cards/course-card-small/course-card-small.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,8 @@ import { CoursePageComponent } from './components/pages/course-page/course-page.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule  // Add FormsModule here
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,8 @@
 @import "src/styles/main.scss";
 .navbar {
-
+  z-index: 999;
+  transition: transform 0.3s ease-in-out;
+  
   &-icon{
     width: 120px;
     height: auto;
@@ -39,7 +41,13 @@
     }
   }
 }
+.navbar-hidden {
+  transform: translateY(-100%);
+}
 
+.navbar-visible {
+  transform: translateY(0);
+}
 .search-wrapper {
     
     .search-input {
@@ -121,13 +129,13 @@
     .grid-container {
       display: grid;
       // grid-template-columns: auto 6fr auto;
-      grid-template-columns: 2fr 6fr 2fr;
+      grid-template-columns: 3fr 7fr 2fr;
 
       gap: 16px; 
 
-      // @include break('xl') {
-      // grid-template-columns: 2fr 6fr 2fr;
-      // }
+      @include break('xl') {
+        grid-template-columns: 3fr 6fr 3fr;
+      }
       // height: 300px; 
 
       .cols {
@@ -143,6 +151,16 @@
 
           &__heading{
             font-size: $font-size-16-responsive;
+          }
+        }
+        .cardSm-grid{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 10px;
+          justify-items: center;
+          
+          @include break('xl'){
+            gap: 15px;
           }
         }
       }
@@ -203,5 +221,8 @@
   
   .list-group-item:hover {
     background-color: #f0f0f0;
+  }
+  .navbar-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
