@@ -27,12 +27,6 @@ li,a{cursor: pointer;}
             }
         }
     }
-    // &-links{
-    //     font-size: $font-size-14-responsive;
-
-    // }
-    // footer-about__links
-
 
 
     &-courses__heading{
@@ -49,11 +43,14 @@ li,a{cursor: pointer;}
         background-color: #2E2E31;
     }
     &-type{
-        .ul{
-            @include break('sm'){
-                list-style-type: disc;
+        .ul .footer-type__link:not(:first-child)::before {
+            @include break('sm') {
+              content: "•"; 
+              font-size: $font-size-16-responsive; 
+              margin-right: 10px; 
             }
-        }
+          }
+          
         &__link{
             
             @include break('sm'){
@@ -74,7 +71,15 @@ li,a{cursor: pointer;}
         }
     }
     /* CSS */
-ul .footer-type__link:first-child {
-  list-style: none;
+// ul .footer-type__link:first-child {
+//   list-style: none;
+// }
+// .ul .footer-type__link::before {
+//   content: "•"; 
+//   font-size: $font-size-16-responsive; 
+//   margin-right: 10px; 
+//   color: rgb(237, 66, 66); 
+// }
 }
-}
+
+

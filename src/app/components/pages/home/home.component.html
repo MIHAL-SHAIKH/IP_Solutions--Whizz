@@ -1,5 +1,5 @@
 <section
-  class="landing container-fluid position-relative overflow-hidden bg-dark px-0"
+  class="landing container-fluid position-relative overflow-hidden px-0"
 >
 <picture>
   <!-- Image for small devices (up to 767px) -->
@@ -16,7 +16,7 @@
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti,
       numquam.
     </p>
-    <div class="d-flex justify-content-start w-100 mt-5">
+    <div (click)="openMegaMenu()" class="d-flex justify-content-start w-100 mt-5">
       <button class="landing-btn__started btn bg-black text-white">
         get started
         <i class="icon ri-arrow-right-up-line ps-2"></i>
@@ -67,36 +67,21 @@
         Explore our Top leading courses
       </h2>
     </div>
-    <div class="swiper mySwiper w-100 z-1">
-      <div class="swiper-wrapper d-flex w-auto pt-2 pb-5">
-        <div class="swiper-slide d-flex justify-content-center">
-          <app-course-card></app-course-card>
-        </div>
-        <div class="swiper-slide d-flex justify-content-center">
-          <app-course-card></app-course-card>
-        </div>
-        <div class="swiper-slide d-flex justify-content-center">
-          <app-course-card></app-course-card>
-        </div>
-        <div class="swiper-slide d-flex justify-content-center">
-          <app-course-card></app-course-card>
-        </div>
-        <div class="swiper-slide d-flex justify-content-center">
-          <app-course-card></app-course-card>
-        </div>
-        <div class="swiper-slide d-flex justify-content-center">
-          <app-course-card></app-course-card>
+    <div class="swiper mySwiper w-100 z-1 h-100">
+      <div class="swiper-wrapper d-flex w-auto pt-2 pb-5 h-100">
+        <div *ngFor="let slideData  of cardsData[0].content"class="swiper-slide d-flex justify-content-center h-100">
+          <app-course-card [card]="slideData"></app-course-card>
         </div>
       </div>
     </div>
     <div
-      class="swiper-button-next ratio-1x1 rounded-circle bg-white fs-5 d-none d-lg-flex position-absolute end-0"
+      class="swiper-button-next ratio-1x1 text-primary rounded-circle bg-white fs-5 d-none d-lg-flex position-absolute end-0"
       style="transform: translateX(50%)"
     >
       <i class="ri-arrow-right-line"></i>
     </div>
     <div
-      class="swiper-button-prev ratio-1x1 rounded-circle bg-white fs-5 d-none d-lg-flex position-absolute start-0 translate-middle-x"
+      class="swiper-button-prev ratio-1x1 text-primary rounded-circle bg-white fs-5 d-none d-lg-flex position-absolute start-0 translate-middle-x"
     >
       <i class="ri-arrow-left-line"></i>
     </div>
@@ -114,10 +99,12 @@
 <section id="counter" class="counter sec-padding py-5 container-fluid">
   <div class="Mycontainer">
     <div class="row text-center mb-5">
-      <p class="counter__para">Your goals are our goals</p>
-      <h3 class="counter__heading">
-        Invest in yourself today. Unlock success for a lifetime.
-      </h3>
+      <div class="text-wrapper mx-auto">
+        <p class="counter__para">Your goals are our goals</p>
+        <h3 class="counter__heading">
+          Invest in yourself today. Unlock success for a lifetime.
+        </h3>
+      </div>
     </div>
     <div class="row mt-5 gap-3 gap-sm-4 gap-md-5">
       <div class="col-12 col-sm text-center">
@@ -150,10 +137,10 @@
 <!-- counter section end -->
 
 <!-- javed  Chaurasiya section -->
-<section class="cto py-5">
+<section class="cto">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-12 col-md-auto">
+      <div class="col-12 col-md-6">
         <div class="cto-img mx-auto mx-md-0">
           <img
             class="w-100 h-100 object-fit-cover overflow-hidden"
@@ -162,7 +149,7 @@
           />
         </div>
       </div>
-      <div class="col-12 col-md">
+      <div class="col-12 col-md-6">
         <div class="text-start p-3">
           <div class="cto-textWrapper">
             <h3 class="cto__heading fw-medium mb-4 text-center text-md-start">
@@ -238,8 +225,16 @@
 </section>
 
 <!-- what our learners say -->
-<section>
-  <!-- <app-user-card></app-user-card> -->
+<section class="learner container-fluid px-0">
+  <h2 class="learner-header text-center">
+    What Our Learners Say
+  </h2>
+  <div class="row d-flex flex-nowrap overflow-scroll">
+    <div *ngFor="let i of [1,2,3,4,4,4,4]" class="col-auto learner-card_infi">
+      <app-user-card></app-user-card>
+      <app-user-card></app-user-card>
+    </div>
+  </div>
 </section>
 
 <section class="grouped container-fluid my-5">

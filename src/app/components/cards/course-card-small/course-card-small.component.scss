@@ -1,18 +1,47 @@
 @import "src/styles/base/global";
 @import "src/styles/base/typography";
+@import "src/styles/abstracts/mixins";
 .card-small{
+    .card-title{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 1;
+        font-size: 1.10rem;
+        
+        @include break('xl'){
+            font-size: 1.25rem;
+        }
+    }
 
     &__para{
         color: #6B7280;
         font-size: $font-size-12-responsive;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 3;
+
+        @include break('xl'){
+            -webkit-line-clamp: 4;
+        }
     }
     &__img{
-        height: 50px;
-        width: 50px;
+        height: 45px;
+        width: 45px;
         background-color: #6B7280;
         border-radius: 8px;
+
+        @include break('xl'){
+            height: 50px;
+            width: 50px;
+        }
     }
     &__hours,&__rating{
-        font-size: $font-size-12-responsive
+        font-size: $font-size-10-responsive;
+
+        @include break('xl'){
+            font-size: $font-size-12-responsive;
+        }
     }
 }

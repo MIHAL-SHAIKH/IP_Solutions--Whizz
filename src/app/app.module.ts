@@ -12,6 +12,7 @@ import { UserCardComponent } from './components/cards/user-card/user-card.compon
 import { StartedSectionComponent } from './components/pages/started-section/started-section.component';
 import { SkillsSectionComponent } from './components/skills-section/skills-section.component';
 import { CourseCardSmallComponent } from './components/cards/course-card-small/course-card-small.component';
+import { CoursePageComponent } from './components/pages/course-page/course-page.component';
 // import { CourseCardSmallComponent } from './components/cards/course-card-small/course-card-small.component';
 
 @NgModule({
@@ -25,7 +26,8 @@ import { CourseCardSmallComponent } from './components/cards/course-card-small/c
     UserCardComponent,
     StartedSectionComponent,
     SkillsSectionComponent,
-    CourseCardSmallComponent
+    CourseCardSmallComponent,
+    CoursePageComponent
   ],
   imports: [
     BrowserModule,

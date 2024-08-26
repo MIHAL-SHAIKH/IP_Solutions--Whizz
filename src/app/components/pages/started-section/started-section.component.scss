@@ -11,7 +11,7 @@
         
         @include break('sm'){
         background-image: url('/assets/cardBanner1.png');
-        height: 268px;
+        height: 218px;
         min-height: 192px;
         }
     
@@ -22,6 +22,10 @@
     &-img{
         max-width: 316px;
         max-height: 320px;
+        
+        // img{
+        //     max-width: 300px !important;
+        // }
     }
     
     &__header{

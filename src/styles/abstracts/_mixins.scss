@@ -24,7 +24,8 @@ $breakpoints: (
 }
 
 @mixin text-gradient {
-  background: linear-gradient(45deg, $color-darkest-blue  0%, $color-bright-blue 100%);
+  // background: linear-gradient(90deg, #2855A4 0%, #2373FF 100%);
+  background: linear-gradient(90deg, $color-darkest-blue, $accent-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

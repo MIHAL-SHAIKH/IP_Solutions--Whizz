@@ -19,8 +19,11 @@
 // }
 body{
     margin: 0;
-    padding: 0;                                     
+    padding: 0;    
+    height: 100%;                                 
+    width: 100%;
 }
 a{
     text-decoration: none !important;
 }
+hr,.vr{color: #a6a6a6 !important;}

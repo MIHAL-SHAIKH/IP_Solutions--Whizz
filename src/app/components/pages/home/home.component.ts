@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { tabsApi } from 'src/app/demoData';
 declare var Swiper: any;
 @Component({
   selector: 'app-home',
@@ -6,10 +8,21 @@ declare var Swiper: any;
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  index_img = '../../../../assets/ogban.png'
+  index_img = '../../../../assets/ogban.png';
+
+ @Input() cardsData = tabsApi;
+
+ constructor(private router:Router){}
   
   ngOnInit(): void {
     this.initializeSwiper();
+    // this.router.navigate(['/noName'])
+  }
+  openMegaMenu() {
+    const megaMenuButton = document.getElementById('dropdownMenuButton');
+    if (megaMenuButton) {
+      megaMenuButton.click();
+    }
   }
 
   initializeSwiper(): void {

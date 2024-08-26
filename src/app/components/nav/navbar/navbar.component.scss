@@ -77,14 +77,16 @@
       top: 0;
       min-width: 25rem;
     }
-    // .ktm-mega-menu {
-    //   position: static;
-    // }
+
     .mega-menu {
       left: 0;
       right: 0;
       width: 100%;
-      padding: 5%;
+      padding: 3.8%;
+
+      @include break('xl'){
+        padding: 5% 4%;
+      }
       &__heading{
         font-size: $font-size-35-responsive;
       }
@@ -118,8 +120,14 @@
 
     .grid-container {
       display: grid;
-      grid-template-columns: 3fr 6fr 3fr;
+      // grid-template-columns: auto 6fr auto;
+      grid-template-columns: 2fr 6fr 2fr;
+
       gap: 16px; 
+
+      // @include break('xl') {
+      // grid-template-columns: 2fr 6fr 2fr;
+      // }
       // height: 300px; 
 
       .cols {

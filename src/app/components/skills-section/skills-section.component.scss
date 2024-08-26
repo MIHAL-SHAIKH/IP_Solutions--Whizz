@@ -12,9 +12,11 @@
         }
         &__heading{
             font-size: $font-size-28-responsive;
+            margin-bottom: 1rem;
         }
         &__para{
             font-size: $font-size-16-responsive;
+            line-height: 21.78px;
         }
 
     }
@@ -23,6 +25,7 @@
     &-col2{
         &__heading{
             font-size: $font-size-24-responsive;
+            margin-bottom: 1.5rem;
         }
         .tab__heading{
             font-size: $font-size-18-responsive;
@@ -30,6 +33,7 @@
         &__linkWrapper{
             // max-height: 64vh;
             max-height: 450px;
+            
         }
         .nav{
             border: 1px solid $card-border;
@@ -52,6 +56,11 @@
             &-link.active{
                 color: white;
                 background-color: $color-bright-blue;
+                .icons{
+                    display: inline-block !important;
+                    transition: all 500ms linear;
+                    // transform: translateX(0) !important;
+                  }
             }
         }
         &-grid{
@@ -70,8 +79,3 @@
         }
     }
 }
-// .skills-col2__heading{
-//     font-size: $font-size-24-responsive;
-//     font-weight: 300 !important;
-//     color: red;
-// }

@@ -12,9 +12,12 @@
 
     
     @include break('sm'){
+      min-height: 80svh;
       // background-position: top bottom left right;
-      // background-image: url('../../../../assets/ogban.png');
-
+      // background-image: url('../../../../assets/ogban.png')
+    }
+    @include break('md'){
+      min-height: 70vh;
     }
 
     &-textWrapper{
@@ -82,23 +85,26 @@
         z-index: 2;
       }
   
-      &:before {
-        left: 0;
-        background: linear-gradient(to left, rgba(255,255,255,0), rgb(255, 255, 255));
-      }
-      &:after {
-        right: 0;
-        background: linear-gradient(to right, rgba(255,255,255,0), rgb(255, 255, 255));
-      }
+      // &:before {
+      //   left: 0;
+      //   background: linear-gradient(to left, rgba(255,255,255,0), rgb(255, 255, 255));
+      // }
+      // &:after {
+      //   right: 0;
+      //   background: linear-gradient(to right, rgba(255,255,255,0), rgb(255, 255, 255));
+      // }
     }
 
     &_items {
       animation: 30s slides infinite linear;
       &-img{
-        height: 130px;
+        height: 150px;
       }
     }
   }
+  //
+
+  // 
   
 //partnets logo end
 // skills section start
@@ -112,6 +118,7 @@
     // }
     &__heading{
         font-size: $font-size-28-responsive;
+        margin-bottom: 2rem;
     }
 }
 // for glowble
@@ -119,6 +126,7 @@
 
     &-slide{
         flex: 0 0 auto;
+        height:initial !important;
     }
     &-button-next,
     &-button-prev{
@@ -126,7 +134,7 @@
         height: 50px;
         width: 50px;
         border: 1px solid $card-border;
-        color: black;
+        // color: $color-dark-blue;
         // transform: translateX(-100%);
     
         &::after{
@@ -138,6 +146,10 @@
 // counter
 .counter{
   @include myContainer;
+
+  .text-wrapper{
+    max-width: 486px;
+  }
   &__para{
     font-size: $font-size-14-responsive;
     @include text-gradient;
@@ -164,6 +176,7 @@
 
 // cto
 .cto{
+  padding: 6% 0;
   @include myContainer;
 
   &-img{
@@ -172,11 +185,11 @@
 
 
     @include break('md'){
-      max-width: 340px;
+      max-width: 430px;
     }
     
     @include break('lg'){
-      max-width: 405px;
+      max-width: 505px;
     }
     img{
     border-radius: $card-img-border-radius-lg;
@@ -235,6 +248,17 @@
       max-width: 500px;
       min-height: 260px
     }
+  }
+}
+
+.learner{
+  padding: 6% 0;
+  &-header{
+    font-size: $font-size-35-responsive;
+    margin-bottom: 3%;
+  }
+  &-card_infi{
+    animation: 10s slides infinite linear;
   }
 }
 // groupded

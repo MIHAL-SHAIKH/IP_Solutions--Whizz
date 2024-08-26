@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-auto skills-col1 p-3 p-sm-5 px-lg-3">
             <div class="text-wrapper text-start">
-                <p class="skills-col1__text">Find your ideal</p>
+                <p class="skills-col1__text fw-medium">Find your ideal</p>
                 <h2 class="skills-col1__heading">All the skills you need in one place</h2>
                 <p class="skills-col1__para">From critical skills to technical topics, Udemy supports your professional development.</p>
             </div>
@@ -10,7 +10,7 @@
         <div class="col-12 skills-col2">
             <div class="d-flex align-items-start justify-content-center justify-content-md-start">
                 <div class="d-none d-lg-inline-block nav flex-column nav-pills me-3 text-start p-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <h3 class="skills-col2__heading text-capitalize text-black">catergory</h3>
+                    <h3 class="skills-col2__heading text-capitalize text-black fw-light">catergory</h3>
                     <hr>
                     <div class="py-2 overflow-y-scroll skills-col2__linkWrapper">
                         <!-- <button class="nav-link text-start active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
@@ -21,7 +21,7 @@
                         <!-- <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical"> -->
                             <button 
                             *ngFor="let tab of tabs" 
-                            class="nav-link text-start" 
+                            class="buttons nav-link text-start d-flex fw-medium justify-content-between" 
                             [class.active]="tab.active" 
                             [id]="'v-pills-' + tab.id + '-tab'" 
                             data-bs-toggle="pill" 
@@ -30,9 +30,10 @@
                             role="tab" 
                             [attr.aria-controls]="'v-pills-' + tab.id" 
                             [attr.aria-selected]="tab.active"
-                            (click)="setActiveTab(tab.id)"
+                            (click)="setActiveTab(tab)"
                           >
                             {{ tab.title }}
+                            <span class="icons d-none"><i class="ri-arrow-right-line"></i></span>
                           </button>
                           <!-- </div> -->
                     </div>
@@ -40,7 +41,7 @@
                 <div class="tab-content w-100" id="v-pills-tabContent">
                     <div class="d-flex justify-content-between align-items-baseline w-100 py-2 py-md-0">
                         <!-- <div> -->
-                            <h6 class="tab__heading fw-medium mb-0">Courses in CNN</h6>
+                            <h6 class="tab__heading fw-medium mb-2">Courses in {{selectedTitle}}</h6>
                         <!-- </div> -->
                         <div class="dropdown d-inline-block d-lg-none">
                             <button class="btn border-1 border-black dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -65,20 +66,20 @@
                           tabindex="0"
                         >
                         <div class="skills-col2-grid d-grid">
-                            <div *ngFor="let cards of tab.content.slice(0,6)" class="p-2 d-flex justify-content-center">
+                            <div *ngFor="let cards of tab.content.slice(0, isMobile == true ? 2 : 6)" class="p-2 d-flex justify-content-center">
                                 <app-course-card [card]="cards"></app-course-card>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 py-4">
+                <!-- <div class="col-12 py-4">
                     <button class="mx-auto d-block btn btn-dark">
                         Explore More
                         <span>
                             <i class="ri-search-eye-line ms-1"></i>
                         </span>
                     </button>
-                </div>
+                </div> -->
                   <!-- <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
                     <div class="skills-col2-grid d-grid">
                         <div *ngFor="let i of [1,2,3,4,5,6]" class="p-2 d-flex justify-content-center">
