@@ -3,18 +3,11 @@
 @import "src/styles/abstracts/mixins";
 
 .landing{
-    // min-height: 90svh;
     min-height: 100svh;
-    // background-image: url('../../../../assets/landingSm.png');
-    // background-size:cover;
-    // background-repeat: no-repeat;
-    // background-position: bottom right;
 
     
     @include break('sm'){
       min-height: 80svh;
-      // background-position: top bottom left right;
-      // background-image: url('../../../../assets/ogban.png')
     }
     @include break('md'){
       min-height: 70vh;
@@ -85,14 +78,6 @@
         z-index: 2;
       }
   
-      // &:before {
-      //   left: 0;
-      //   background: linear-gradient(to left, rgba(255,255,255,0), rgb(255, 255, 255));
-      // }
-      // &:after {
-      //   right: 0;
-      //   background: linear-gradient(to right, rgba(255,255,255,0), rgb(255, 255, 255));
-      // }
     }
 
     &_items {
@@ -102,26 +87,14 @@
       }
     }
   }
-  //
-
-  // 
-  
-//partnets logo end
-// skills section start
-
-// skills section end
-// explore section
 
 .explore{
-    // &-inner{
-    //     @include myContainer;
-    // }
     &__heading{
         font-size: $font-size-28-responsive;
         margin-bottom: 2rem;
     }
 }
-// for glowble
+
 .swiper{
 
     &-slide{
@@ -134,8 +107,6 @@
         height: 50px;
         width: 50px;
         border: 1px solid $card-border;
-        // color: $color-dark-blue;
-        // transform: translateX(-100%);
     
         &::after{
             display: none;
@@ -194,7 +165,6 @@
     img{
     border-radius: $card-img-border-radius-lg;
     }
-    // height: 636px;
   }
   &__stamp{
     width: 130px;
@@ -229,7 +199,6 @@
     min-height: 473px;
     background-image: url('../../../../../src/assets/cardBanner2.png');
   }
-  // background: linear-gradient(106.62deg, #2373FF 3.36%, #003792 65.31%);
 
 
   &__para{

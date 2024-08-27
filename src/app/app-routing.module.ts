@@ -5,7 +5,6 @@ import { CoursePageComponent } from './components/pages/course-page/course-page.
 
 const routes: Routes = [
   { path: 'home', redirectTo: 'home', pathMatch: 'full' }, 
-  // { path: 'noName', component: CoursePageComponent },
   { path: 'home', component: HomeComponent },
 ];
 

@@ -25,7 +25,7 @@ export class NavbarComponent {
 
   private lastScrollTop = 0;
   public isNavbarVisible = true;
-  public hasShadow = false; // New property to control shadow
+  public hasShadow = false; 
 
   constructor() {
     console.log(footer, 'footer');
@@ -36,17 +36,17 @@ export class NavbarComponent {
     const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
     if (currentScrollTop > this.lastScrollTop) {
-      // Scrolling down
+   
       this.isNavbarVisible = false;
     } else {
-      // Scrolling up
+   
       this.isNavbarVisible = true;
     }
 
-    // Add shadow if scrolled more than 50 pixels
+
     this.hasShadow = currentScrollTop > 50;
 
-    this.lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
+    this.lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; 
   }
 
   selectRecommendation(item: string) {

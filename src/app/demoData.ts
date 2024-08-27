@@ -387,7 +387,6 @@ export const tabsApi = [
         thumbnail: 'path/to/iot-thumbnail.jpg',
         videoUrl: 'path/to/iot-video.mp4'
       }
-      // Add more courses if needed
     ]
   }
 ];

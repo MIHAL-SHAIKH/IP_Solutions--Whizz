@@ -10,8 +10,8 @@ import { FooterComponent } from './components/footer/footer/footer.component';
 import { OffcanvasComponent } from './components/nav/offcanvas/offcanvas.component';
 import { CourseCardComponent } from './components/cards/course-card/course-card.component';
 import { UserCardComponent } from './components/cards/user-card/user-card.component';
-import { StartedSectionComponent } from './components/pages/started-section/started-section.component';
-import { SkillsSectionComponent } from './components/skills-section/skills-section.component';
+import { StartedSectionComponent } from './components/pages/home/started-section/started-section.component';
+import { SkillsSectionComponent } from './components/pages/home/skills-section/skills-section.component';
 import { CourseCardSmallComponent } from './components/cards/course-card-small/course-card-small.component';
 import { CoursePageComponent } from './components/pages/course-page/course-page.component';
 
@@ -32,7 +32,7 @@ import { CoursePageComponent } from './components/pages/course-page/course-page.
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule  // Add FormsModule here
+    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

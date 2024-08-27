@@ -68,9 +68,7 @@
       pointer-events: none; 
     }
   }
-  
 
-  // 
   .dropdown-toggle{
     &::after{
       display: none;
@@ -124,11 +122,10 @@
       top: 0;
     }
 
-    // content inside mega menu
 
     .grid-container {
       display: grid;
-      // grid-template-columns: auto 6fr auto;
+
       grid-template-columns: 3fr 7fr 2fr;
 
       gap: 16px; 
@@ -136,10 +133,10 @@
       @include break('xl') {
         grid-template-columns: 3fr 6fr 3fr;
       }
-      // height: 300px; 
+
 
       .cols {
-        // background-color: #f0f0f0;
+
         padding: 20px;
 
         &-cards{
@@ -165,27 +162,12 @@
         }
       }
     }
-    
-    
-    /* Responsive behavior: adjust when columns are removed */
-    // .col-1 {
-    //   grid-column: span 1;
-    // }
-    
-    // .col-2 {
-    //   grid-column: span 1;
-    // }
-    
-    // .col-3 {
-    //   grid-column: span 1;
-    // }
-    
-    /* When only one column is present, it takes up its original space */
+
+   
     .grid-container > :only-child {
       grid-column: span 1;
     }
-    
-    /* When there are two columns, they adjust to available space */
+
     .grid-container > :nth-child(2):last-child {
       grid-column: span 3;
     }
@@ -196,9 +178,6 @@
     
     
   }
-
-  // search bar
-
   .search-wrapper {
     position: relative;
   }

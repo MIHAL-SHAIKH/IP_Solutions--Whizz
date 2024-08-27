@@ -7,7 +7,5 @@ import { Component, Input} from '@angular/core';
 })
 export class CourseCardComponent {
   @Input() card : any;
-  constructor(){
-    console.log('look here',this.card)
-  }
+  constructor(){}
 }
