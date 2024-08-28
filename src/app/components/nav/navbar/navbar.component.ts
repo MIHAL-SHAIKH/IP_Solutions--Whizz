@@ -4,7 +4,7 @@ import { footer } from 'src/app/demoData';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
   courses: any = footer.courses;

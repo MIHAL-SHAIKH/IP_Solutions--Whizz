@@ -4,7 +4,7 @@ import { tabsApi } from 'src/app/demoData';
 @Component({
   selector: 'app-skills-section',
   templateUrl: './skills-section.component.html',
-  styleUrls: ['./skills-section.component.scss']
+  styleUrls: ['./skills-section.component.css']
 })
 export class SkillsSectionComponent implements OnInit{
   tabs = tabsApi;

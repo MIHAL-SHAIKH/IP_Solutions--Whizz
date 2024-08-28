@@ -1,5 +1,5 @@
 
-// // @import '../abstracts/mixins';
+/* // // @import '../abstracts/mixins';
 // *,*::after,*::before{
 //     // margin: 0;
 //     // padding: 0;
@@ -74,10 +74,10 @@
 // body{
 //     font-size: $font-size-16-responsive;
 // }
-// $font-scale: 10.1;
+// $font-scale: 10.1; */
 
 :root {
-    // color
+    /* // color */
     --color-lightest-blue: #EEF5FE;
     --color-light-blue: #92C4FC;
     --color-medium-blue: #60A4F9;
@@ -159,12 +159,12 @@
     --card-img-border-radius: var(--border-radius-md); /* 8px for card images */
     --card-img-border-radius-lg: var(--border-radius-lg);
 
-    // overides of cards
+    /* // overides of cards */
     --card-border-radius: var(--card-img-border-radius-lg);
     --card-border-color: var(--card-border);
     --card-box-shadow: 0px 16px 32px -8px rgba(12, 12, 13, 0.4);
 
-    //accordion overider
+    /* //accordion overider */
     --accordion-icon-color: black;
     --accordion-bg: white;
     --accordion-border-color: #e4e6ea;
@@ -173,7 +173,7 @@
     --accordion-button-active-bg: none;
     --accordion-border-radius: 16px;
 }
-// reset start
+/* // reset start
 
 
 // .card {
@@ -205,8 +205,8 @@
 // }
 
 // .button:hover {
-//     background-color: var(--button-hover-bg-color); /* Approximation since CSS doesn't support direct darken function */
-// }
+//     background-color: var(--button-hover-bg-color);
+// } */
 
 a {
     color: var(--link-color);
@@ -216,7 +216,7 @@ a:hover {
     color: var(--link-hover-color);
 }
 
-// $breakpoints: (
+/* // $breakpoints: (
 //   sm: 576px,
 //   md: 768px,
 //   lg: 992px,
@@ -233,10 +233,10 @@ a:hover {
 //     } @else {
 //       @error "Invalid breakpoint: #{$breakpoint}.";
 //     }
-//   }
+//   } */
 
 
-//   @mixin myContainer{
+/* //   @mixin myContainer{
 //   max-width: 1020px;
 //   margin: auto;
 // }
@@ -253,4 +253,4 @@ a:hover {
 //   -webkit-box-orient: vertical;
 //   overflow: hidden;
 //   text-overflow: ellipsis;
-// }
+// } */

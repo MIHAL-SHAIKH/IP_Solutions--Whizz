@@ -1,7 +1,8 @@
-// @import './../../../../styles/base/global';
+/* // @import './../../../../styles/base/global';
 // @import './../../../../styles/abstracts/variables';
-// @import './../../../../styles/abstracts/mixins';
-@import './../../../../styles/base/typography';
+// @import './../../../../styles/abstracts/mixins'; */
+@import '../../../../styles/base/_typography.css';
+/* @import './../../../../styles/base/typography.css'; */
 .navbar {
   z-index: 999;
   transition: transform 0.3s ease-in-out;
@@ -92,9 +93,9 @@
       width: 100%;
       padding: 3.8%;
 
-      // @include break('xl'){
+      /* // @include break('xl'){
       //   padding: 5% 4%;
-      // }
+      // } */
       &__heading{
         font-size: var(--font-size-35-responsive);
       }
@@ -132,9 +133,9 @@
 
       gap: 16px; 
 
-      // @include break('xl') {
+      /* // @include break('xl') {
       //   grid-template-columns: 3fr 6fr 3fr;
-      // }
+      // } */
 
 
       .cols {
@@ -158,9 +159,9 @@
           gap: 10px;
           justify-items: center;
           
-          // @include break('xl'){
+          /* // @include break('xl'){
           //   gap: 15px;
-          // }
+          // } */
         }
       }
     }

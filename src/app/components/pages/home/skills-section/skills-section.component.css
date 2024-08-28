@@ -1,6 +1,6 @@
-// @import "src/styles/abstracts/mixins";
-@import "src/styles/base/typography";
-// @import "src/styles/base/global";
+/* // @import "src/styles/abstracts/mixins"; */
+@import "src/styles/base/typography.css";
+/* // @import "src/styles/base/global"; */
 
 .skills{
     &-col1{
@@ -8,7 +8,7 @@
           max-width: 534px;
         }
         &__text{
-            // @include text-gradient;
+            /* // @include text-gradient; */
             background: linear-gradient(90deg, var(--color-darkest-blue),var(--accent-color)) ;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -34,15 +34,15 @@
             font-size: var(--font-size-18-responsive);
         }
         &__linkWrapper{
-            // max-height: 64vh;
+            /* // max-height: 64vh; */
             max-height: 450px;
             
         }
         .nav{
             border: 1px solid var(--card-border);
-            // background-color: green;
+            /* // background-color: green; */
             border-radius: var(--border-radius-lg);
-            // @include break('lg'){
+            /* // @include break('lg'){
       
             //     min-width: 210px;
             //     min-height: 480px;
@@ -50,7 +50,7 @@
             // @include break('xl'){
             //     min-width: 300px;
             //     min-height: 500px;
-            // }
+            // } */
             &-link{
                 border-radius: 4px;
                 color: var(--tab-link) ;
@@ -62,7 +62,7 @@
                 .icons{
                     display: inline-block !important;
                     transition: all 500ms linear;
-                    // transform: translateX(0) !important;
+                    /* // transform: translateX(0) !important; */
                   }
             }
         }
@@ -71,14 +71,14 @@
             grid-template-columns: repeat(1, 1fr);
             align-items: stretch;
 
-            // @include break('sm'){
+            /* // @include break('sm'){
             // grid-template-columns: repeat(2, 1fr);
             // }
 
             // @include break('md'){
             //     grid-template-columns: repeat(3, 1fr);
             // }
-            // gap: 16px; 
+            // gap: 16px;  */
         }
     }
 }
