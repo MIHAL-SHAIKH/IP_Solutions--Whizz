@@ -8,7 +8,12 @@
     border-color: var(--card-border-color);
     max-width: 20rem;
     .card-title{
-        @include line-clamp(1);
+        // @include line-clamp(1);
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
         font-size: 1.10rem;
         
         // @include break('xl'){
@@ -19,7 +24,12 @@
     &__para{
         color: #6B7280;
         font-size:var(--font-size-12-responsive);
-        @include line-clamp(3);
+        // @include line-clamp(3);
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
 
         // @include break('xl'){
         //     -webkit-line-clamp: 4;

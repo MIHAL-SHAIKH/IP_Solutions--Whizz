@@ -236,21 +236,21 @@ a:hover {
 //   }
 
 
-  @mixin myContainer{
-  max-width: 1020px;
-  margin: auto;
-}
+//   @mixin myContainer{
+//   max-width: 1020px;
+//   margin: auto;
+// }
 
-@mixin text-gradient {
-  // background: linear-gradient(90deg, #2855A4 0%, #2373FF 100%);
-  background: linear-gradient(90deg, var(--color-darkest-blue),var(--accent-color)) ;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-@mixin line-clamp($lines) {
-  display: -webkit-box;
-  -webkit-line-clamp: $lines;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+// @mixin text-gradient {
+//   // background: linear-gradient(90deg, #2855A4 0%, #2373FF 100%);
+//   background: linear-gradient(90deg, var(--color-darkest-blue),var(--accent-color)) ;
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }
+// @mixin line-clamp($lines) {
+//   display: -webkit-box;
+//   -webkit-line-clamp: $lines;
+//   -webkit-box-orient: vertical;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+// }

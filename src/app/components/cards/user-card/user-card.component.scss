@@ -44,7 +44,12 @@
     }
     &__para{
         font-size: var(--font-size-12-responsive);
-        @include line-clamp(4);
+        // @include line-clamp(4);
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
         
         
         // @include break('md'){

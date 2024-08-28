@@ -8,7 +8,10 @@
           max-width: 534px;
         }
         &__text{
-            @include text-gradient;
+            // @include text-gradient;
+            background: linear-gradient(90deg, var(--color-darkest-blue),var(--accent-color)) ;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         &__heading{
             font-size: var(--font-size-28-responsive);
