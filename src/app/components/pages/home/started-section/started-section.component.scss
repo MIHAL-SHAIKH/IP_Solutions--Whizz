@@ -1,6 +1,7 @@
 // started
 @import 'src/styles/base/typography';
-@import 'src/styles/base/global';
+// @import 'src/styles/abstracts/mixins';
+// @import 'src/styles/base/global';
 .started{
     &-container{
         max-width: 1020px;
@@ -16,26 +17,22 @@
         }
     
         @include break('lg'){
-            border-radius: $border-radius-lg;
+            border-radius: var(--border-radius-lg);
         }
     }
     &-img{
         max-width: 316px;
         max-height: 320px;
-        
-        // img{
-        //     max-width: 300px !important;
-        // }
     }
     
     &__header{
-        font-size: $font-size-28-responsive;
+        font-size: var(--font-size-28-responsive);
         @include break('md'){
-            font-size: $font-size-30-responsive;
+            font-size: var(--font-size-30-responsive);
         }
     }
     &__para{
-        font-size: $font-size-14-responsive;
+        font-size: var(--font-size-14-responsive);
         line-height: 17px;
         @include break('md'){
             line-height: 20px;

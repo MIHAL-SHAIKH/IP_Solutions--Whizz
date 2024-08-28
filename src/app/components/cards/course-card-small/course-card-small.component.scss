@@ -1,9 +1,12 @@
-@import "src/styles/base/global";
+// @import "src/styles/base/global";
 @import "src/styles/base/typography";
-@import "src/styles/abstracts/mixins";
+// @import "src/styles/abstracts/mixins";
 
-.card-small{
+.card--small{
     min-width: 200px;
+    border-radius: var(--card-border-radius);
+    border-color: var(--card-border-color);
+    max-width: 20rem;
     .card-title{
         @include line-clamp(1);
         font-size: 1.10rem;
@@ -15,7 +18,7 @@
 
     &__para{
         color: #6B7280;
-        font-size: $font-size-12-responsive;
+        font-size:var(--font-size-12-responsive);
         @include line-clamp(3);
 
         @include break('xl'){
@@ -34,10 +37,10 @@
         }
     }
     &__hours,&__rating{
-        font-size: $font-size-10-responsive;
+        font-size:var(--font-size-10-responsive);
 
         @include break('xl'){
-            font-size: $font-size-12-responsive;
+            font-size:var(--font-size-12-responsive);
         }
     }
 }

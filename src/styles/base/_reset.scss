@@ -1,29 +1,26 @@
-*,*::after,*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    // background-color: rgba(0, 176, 0, 0.1);
-}
-/* Hide scrollbar for all elements */
-* {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-}
-
-*::-webkit-scrollbar {
-    display: none;  /* Safari and Chrome */
-}
-
-// html{
-//     font-size: 62.5%;
+// *,*::after,*::before{
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+//     background-color: rgba(0, 176, 0, 0.1) !important;
 // }
-body{
-    margin: 0;
-    padding: 0;    
-    height: 100%;                                 
-    width: 100%;
-}
-a{
-    text-decoration: none !important;
-}
-hr,.vr{color: #a6a6a6 !important;}
+
+// * {
+//     scrollbar-width: none; 
+//     -ms-overflow-style: none; 
+// }
+
+// *::-webkit-scrollbar {
+//     display: none;
+// }
+
+// body{
+//     margin: 0;
+//     padding: 0;    
+//     height: 100%;                                 
+//     width: 100%;
+// }
+// a{
+//     text-decoration: none !important;
+// }
+// hr,.vr{color: #a6a6a6 !important;}

@@ -1,0 +1,64 @@
+/* @import ""; */
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: rgba(0, 176, 0, 0.1) !important; */
+}
+
+* {
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body{  
+    height: 100%;                                 
+    width: 100%;
+}
+a{
+    text-decoration: none !important;
+}
+hr,.vr{color: #a6a6a6 !important;}
+
+
+body {
+    font-size: var(--font-size-16-responsive);
+}
+
+/* global styles */
+
+.card {
+    border-radius: var(--card-border-radius);
+    border-color: var(--card-border-color);
+    box-shadow: var(--card-box-shadow);
+}
+.accordion {
+    background-color: var(--accordion-bg);
+    border-color: var(--accordion-border-color);
+    border-radius: var(--accordion-border-radius);
+}
+
+.accordion-icon {
+    color: var(--accordion-icon-color);
+    width: var(--accordion-icon-width);
+}
+
+.accordion-button:focus {
+    box-shadow: var(--accordion-button-focus-box-shadow);
+}
+
+.accordion-button.active {
+    background-color: var(--accordion-button-active-bg);
+}
+.button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+}
+
+.button:hover {
+    background-color: var(--button-hover-bg-color);
+}

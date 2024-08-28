@@ -1,17 +1,18 @@
 @import "src/styles/base/typography";
-@import "src/styles/base/global";
-@import "src/styles/abstracts/mixins";
+// @import "../../../../../base/typography" ;
+// @import "src/styles/base/global";
+// @import "src/styles/abstracts/mixins";
 
 .landing{
     min-height: 100svh;
 
     
-    @include break('sm'){
-      min-height: 80svh;
-    }
-    @include break('md'){
-      min-height: 70vh;
-    }
+    // @include break('sm'){
+    //   min-height: 80svh;
+    // }
+    // @include break('md'){
+    //   min-height: 70vh;
+    // }
 
     &-textWrapper{
       left: 5%;
@@ -36,18 +37,18 @@
             font-size: 60px;
           }
           @include break('lg') {
-            font-size: $font-size-85;
+            font-size: var(--font-size-85-responsive);
             }
             font-size: 40px;
         }
         &__para{
-            font-size: $font-size-16-responsive;
+            font-size: var(--font-size-16-responsive);
         }
     }
     &-btn__started{
         padding: 0.4375rem 1.25rem;
         .icon{
-            font-size: $font-size-16-responsive;
+            font-size: var(--font-size-16-responsive);
         }
     }
 }
@@ -90,7 +91,7 @@
 
 .explore{
     &__heading{
-        font-size: $font-size-28-responsive;
+        font-size: var(--font-size-28-responsive);
         margin-bottom: 2rem;
     }
 }
@@ -106,7 +107,7 @@
     
         height: 50px;
         width: 50px;
-        border: 1px solid $card-border;
+        border: 1px solid var(--card-border);
     
         &::after{
             display: none;
@@ -122,17 +123,18 @@
     max-width: 486px;
   }
   &__para{
-    font-size: $font-size-14-responsive;
+    font-size: var(--font-size-14-responsive);
     @include text-gradient;
   }
   &__heading{
-    font-size: $font-size-28-responsive;
+    font-size: var(--font-size-28-responsive);
   }
   &-count{
 
     &__number{
-      color: $color-dark-blue;
-      font-size: $font-size-48-responsive;
+      // color: var(--color-lightest-blue);
+      font-size: var(--font-size-48-responsive);
+      color: var(--red);
       
       @include break('sm'){
         font-size: 60px;
@@ -163,23 +165,23 @@
       max-width: 505px;
     }
     img{
-    border-radius: $card-img-border-radius-lg;
+    border-radius: var(--card-img-border-radius-lg) ;
     }
   }
   &__stamp{
     width: 130px;
   }
   &__heading{
-    font-size: $font-size-20-responsive;
+    font-size: var(--font-size-20-responsive);
     @include break("sm"){
-      font-size: $font-size-24-responsive;
+      font-size: var(--font-size-24-responsive);
     }
   }
   &__subHeading{
-    font-size: $font-size-18-responsive;
+    font-size: var(--font-size-18-responsive);
   }
   &__para,&__aboutPara,&__read{
-    font-size: $font-size-14-responsive;
+    font-size: var(--font-size-14-responsive);
   }
   
 }
@@ -187,7 +189,7 @@
 .choose{
   @include myContainer;
   @include break('md'){
-    border-radius: $border-radius-lg;
+    border-radius: var(--border-radius-lg);
   }
   background-image: url('../../../../../src/assets/card2Bannersm.png');
   // min-height: 453px;
@@ -202,10 +204,10 @@
 
 
   &__para{
-    font-size: $font-size-14-responsive;
+    font-size: var(--font-size-14-responsive);
 
     &-icon{
-      font-size: $font-size-20-responsive;
+      font-size: var(--font-size-20-responsive);
     }
   }
   &-img{
@@ -223,12 +225,12 @@
 .learner{
   padding: 6% 0;
   &-header{
-    font-size: $font-size-28-responsive;
+    font-size: var(--font-size-28-responsive);
     @include break('md'){
-      font-size: $font-size-30-responsive;
+      font-size: var(--font-size-30-responsive);
     }
     @include break('lg'){
-      font-size: $font-size-35-responsive;
+      font-size: var(--font-size-35-responsive);
     }
     margin-bottom: 3%;
   }
@@ -255,9 +257,9 @@
         }
     }
     &-header{
-      font-size: $font-size-24-responsive;
+      font-size: var(--font-size-24-responsive);
       @include break('sm'){
-        font-size: $font-size-28-responsive;
+        font-size: var(--font-size-28-responsive);
       }
     }
 }
@@ -265,43 +267,76 @@
 
 .ask{
   .accordion{
-    font-size: $font-size-12-responsive;
+    font-size: var(--font-size-12-responsive);
     @include break('md'){
-      font-size: $font-size-14-responsive;
+      font-size: var(--font-size-14-responsive);
     }
     &-button{
-      font-size: $font-size-12-responsive;
+      font-size: var(--font-size-12-responsive);
       @include break('md'){
-        font-size: $font-size-14-responsive;
+        font-size: var(--font-size-14-responsive);
       }
     }
-
   }
   max-width: 740px;
   .accordion-collapse.show{
     box-shadow: 0px 8px 8px -4px #0d0c0c1c !important;
   }
   .accordion-rank{
-    font-size: $font-size-14-responsive;
+    font-size: var(--font-size-14-responsive);
     @include break('md'){
-      font-size: $font-size-16-responsive;
+      font-size: var(--font-size-16-responsive);
     }
   }
   &__heading{
-    font-size: $font-size-24-responsive;
+    font-size: var(--font-size-24-responsive);
 
     @include break('md'){
-    font-size: $font-size-28-responsive;
+    font-size: var(--font-size-28-responsive);
     }
   }
   .got-more{
-    font-size: $font-size-12-responsive;
+    font-size: var(--font-size-12-responsive);
 
     @include break('md'){
-      font-size: $font-size-14-responsive;
+      font-size: var(--font-size-14-responsive);
     }
   }
 }
 
 
 
+/* break points */
+/* Small devices (sm) */
+@media screen and (min-width: 576px) {
+  /* Your CSS rules here */
+  // .landing{
+  //   min-height: 80svh;
+  //   &-textWrapper{
+  //     top: 16%;
+  //     max-width: 430px;
+  //   }
+  // }
+}
+
+/* Medium devices (md) */
+@media screen and (min-width: 768px) {
+  .landing{
+    min-height: 70svh;
+  }
+}
+
+/* Large devices (lg) */
+@media screen and (min-width: 992px) {
+  /* Your CSS rules here */
+}
+
+/* Extra large devices (xl) */
+@media screen and (min-width: 1200px) {
+  /* Your CSS rules here */
+}
+
+/* Extra extra large devices (xxl) */
+@media screen and (min-width: 1400px) {
+  /* Your CSS rules here */
+}

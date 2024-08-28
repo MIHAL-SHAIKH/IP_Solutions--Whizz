@@ -1,42 +1,256 @@
-@import 'src/styles/abstracts/mixins';
 
-$font-size-10: 0.625rem;  // 10px
-$font-size-12: 0.75rem;  // 12px
-$font-size-14: 0.875rem;  // 14px
-$font-size-16: 1rem;      // 16px
-$font-size-18: 1.125rem;  // 18px
-$font-size-20: 1.25rem;   // 20px
-$font-size-22: 1.375rem;  // 22px
-$font-size-24: 1.5rem;   // 24px
-$font-size-28: 1.75rem; // 28px
-$font-size-30: 1.875rem; // 30px
-$font-size-32: 2rem;    // 32px
-$font-size-35: 2.1875rem; //35px
-$font-size-40: 2.5rem; // 40px
-$font-size-48: 3rem;  // 48px
-$font-size-70: 4.375rem; // 70pxc
-$font-size-85: 5.3125rem; // 85px
+// // @import '../abstracts/mixins';
+// *,*::after,*::before{
+//     // margin: 0;
+//     // padding: 0;
+//     box-sizing: border-box;
+//     // background-color: rgba(0, 176, 0, 0.1) !important;
+// }
+
+// * {
+//     scrollbar-width: none; 
+//     -ms-overflow-style: none; 
+// }
+
+// *::-webkit-scrollbar {
+//     display: none;
+// }
+
+// body{  
+//     height: 100%;                                 
+//     width: 100%;
+// }
+// a{
+//     text-decoration: none !important;
+// }
+// hr,.vr{color: #a6a6a6 !important;}
+
+
+// // reset end
+
+
+
+
+// body {
+//     font-size: var(--font-size-16-responsive);
+// }
+
+// $font-size-10: 0.625rem;  // 10px
+// $font-size-12: 0.75rem;  // 12px
+// $font-size-14: 0.875rem;  // 14px
+// $font-size-16: 1rem;      // 16px
+// $font-size-18: 1.125rem;  // 18px
+// $font-size-20: 1.25rem;   // 20px
+// $font-size-22: 1.375rem;  // 22px
+// $font-size-24: 1.5rem;   // 24px
+// $font-size-28: 1.75rem; // 28px
+// $font-size-30: 1.875rem; // 30px
+// $font-size-32: 2rem;    // 32px
+// $font-size-35: 2.1875rem; //35px
+// $font-size-40: 2.5rem; // 40px
+// $font-size-48: 3rem;  // 48px
 // $font-size-70: 4.375rem; // 70pxc
+// $font-size-85: 5.3125rem; // 85px
+// // $font-size-70: 4.375rem; // 70pxc
 
 
-$font-scale: 1.1;
+// $font-scale: 1.1;
 
-$font-size-10-responsive: calc(#{$font-size-10} * #{$font-scale});
-$font-size-12-responsive: calc(#{$font-size-12} * #{$font-scale});
-$font-size-14-responsive: calc(#{$font-size-14} * #{$font-scale});
-$font-size-16-responsive: calc(#{$font-size-16} * #{$font-scale});
-$font-size-18-responsive: calc(#{$font-size-18} * #{$font-scale});
-$font-size-20-responsive: calc(#{$font-size-20} * #{$font-scale});
-$font-size-22-responsive: calc(#{$font-size-22} * #{$font-scale});
-$font-size-24-responsive: calc(#{$font-size-24} * #{$font-scale});
-$font-size-28-responsive: calc(#{$font-size-28} * #{$font-scale});
-$font-size-30-responsive: calc(#{$font-size-30} * #{$font-scale});
-$font-size-32-responsive: calc(#{$font-size-32} * #{$font-scale});
-$font-size-35-responsive: calc(#{$font-size-35} * #{$font-scale});
-$font-size-40-responsive: calc(#{$font-size-40} * #{$font-scale});
-$font-size-48-responsive: calc(#{$font-size-48} * #{$font-scale});
+// $font-size-10-responsive: calc(#{$font-size-10} * #{$font-scale});
+// $font-size-12-responsive: calc(#{$font-size-12} * #{$font-scale});
+// $font-size-14-responsive: calc(#{$font-size-14} * #{$font-scale});
+// $font-size-16-responsive: calc(#{$font-size-16} * #{$font-scale});
+// $font-size-18-responsive: calc(#{$font-size-18} * #{$font-scale});
+// $font-size-20-responsive: calc(#{$font-size-20} * #{$font-scale});
+// $font-size-22-responsive: calc(#{$font-size-22} * #{$font-scale});
+// $font-size-24-responsive: calc(#{$font-size-24} * #{$font-scale});
+// $font-size-28-responsive: calc(#{$font-size-28} * #{$font-scale});
+// $font-size-30-responsive: calc(#{$font-size-30} * #{$font-scale});
+// $font-size-32-responsive: calc(#{$font-size-32} * #{$font-scale});
+// $font-size-35-responsive: calc(#{$font-size-35} * #{$font-scale});
+// $font-size-40-responsive: calc(#{$font-size-40} * #{$font-scale});
+// $font-size-48-responsive: calc(#{$font-size-48} * #{$font-scale});
 
-body{
-    font-size: $font-size-16-responsive;
+// body{
+//     font-size: $font-size-16-responsive;
+// }
+// $font-scale: 10.1;
+
+:root {
+    // color
+    --color-lightest-blue: #EEF5FE;
+    --color-light-blue: #92C4FC;
+    --color-medium-blue: #60A4F9;
+    --color-bright-blue: #3B81F5;
+    --color-dark-blue: #2373FF;
+    --color-darkest-blue: #003792;
+
+    --card-border: #E4E6EA;
+    --color-gray-light: #ccc;
+    --color-gray: #999;
+    --tab-link: #6B7280;
+    --color-black: black;
+
+    /* Theme Variables */
+    --primary-color: var(--color-bright-blue);
+    --secondary-color: var(--color-dark-blue);
+    --accent-color: var(--color-medium-blue);
+    --background-color: var(--color-lightest-blue);
+    --text-color: var(--color-darkest-blue);
+    --border-color: var(--color-light-blue);
+
+    /* Border Variables */
+    --border: var(--color-gray);
+    --border-light: var(--color-gray-light);
+
+    /* Additional Variables */
+    --button-bg-color: var(--primary-color);
+    --button-hover-bg-color: #326FD6; /* Result of darken calculation */
+    --button-text-color: #fff;
+
+    --link-color: var(--primary-color);
+    --link-hover-color: var(--secondary-color);
+
+    /* Define base font sizes */
+    --font-size-10: 0.625rem;  /* 10px */
+    --font-size-12: 0.75rem;   /* 12px */
+    --font-size-14: 0.875rem;  /* 14px */
+    --font-size-16: 1rem;      /* 16px */
+    --font-size-18: 1.125rem;  /* 18px */
+    --font-size-20: 1.25rem;   /* 20px */
+    --font-size-22: 1.375rem;  /* 22px */
+    --font-size-24: 1.5rem;    /* 24px */
+    --font-size-28: 1.75rem;   /* 28px */
+    --font-size-30: 1.875rem;  /* 30px */
+    --font-size-32: 2rem;      /* 32px */
+    --font-size-35: 2.1875rem; /* 35px */
+    --font-size-40: 2.5rem;    /* 40px */
+    --font-size-48: 3rem;      /* 48px */
+    --font-size-70: 4.375rem;  /* 70px */
+    --font-size-85: 5.3125rem; /* 85px */
+
+    /* Define scale factor */
+    --font-scale: 1.1;
+
+    /* Define responsive font sizes */
+    --font-size-10-responsive: calc(var(--font-size-10) * var(--font-scale));
+    --font-size-12-responsive: calc(var(--font-size-12) * var(--font-scale));
+    --font-size-14-responsive: calc(var(--font-size-14) * var(--font-scale));
+    --font-size-16-responsive: calc(var(--font-size-16) * var(--font-scale));
+    --font-size-18-responsive: calc(var(--font-size-18) * var(--font-scale));
+    --font-size-20-responsive: calc(var(--font-size-20) * var(--font-scale));
+    --font-size-22-responsive: calc(var(--font-size-22) * var(--font-scale));
+    --font-size-24-responsive: calc(var(--font-size-24) * var(--font-scale));
+    --font-size-28-responsive: calc(var(--font-size-28) * var(--font-scale));
+    --font-size-30-responsive: calc(var(--font-size-30) * var(--font-scale));
+    --font-size-32-responsive: calc(var(--font-size-32) * var(--font-scale));
+    --font-size-35-responsive: calc(var(--font-size-35) * var(--font-scale));
+    --font-size-40-responsive: calc(var(--font-size-40) * var(--font-scale));
+    --font-size-48-responsive: calc(var(--font-size-48) * var(--font-scale));
+    --font-size-70-responsive: calc(var(--font-size-70) * var(--font-scale));
+    --font-size-85-responsive: calc(var(--font-size-85) * var(--font-scale));
+--red:red;
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --border-radius-xl: 16px;
+
+    /* Specific Use Cases */
+    --card-img-border-radius: var(--border-radius-md); /* 8px for card images */
+    --card-img-border-radius-lg: var(--border-radius-lg);
+
+    // overides of cards
+    --card-border-radius: var(--card-img-border-radius-lg);
+    --card-border-color: var(--card-border);
+    --card-box-shadow: 0px 16px 32px -8px rgba(12, 12, 13, 0.4);
+
+    //accordion overider
+    --accordion-icon-color: black;
+    --accordion-bg: white;
+    --accordion-border-color: #e4e6ea;
+    --accordion-icon-width: 15px;
+    --accordion-button-focus-box-shadow: none;
+    --accordion-button-active-bg: none;
+    --accordion-border-radius: 16px;
 }
-$font-scale: 10.1;
+// reset start
+
+
+// .card {
+//     border-radius: var(--card-border-radius);
+//     border-color: var(--card-border-color);
+//     box-shadow: var(--card-box-shadow);
+// }
+// .accordion {
+//     background-color: var(--accordion-bg);
+//     border-color: var(--accordion-border-color);
+//     border-radius: var(--accordion-border-radius);
+// }
+
+// .accordion-icon {
+//     color: var(--accordion-icon-color);
+//     width: var(--accordion-icon-width);
+// }
+
+// .accordion-button:focus {
+//     box-shadow: var(--accordion-button-focus-box-shadow);
+// }
+
+// .accordion-button.active {
+//     background-color: var(--accordion-button-active-bg);
+// }
+// .button {
+//     background-color: var(--button-bg-color);
+//     color: var(--button-text-color);
+// }
+
+// .button:hover {
+//     background-color: var(--button-hover-bg-color); /* Approximation since CSS doesn't support direct darken function */
+// }
+
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl:1400px
+);
+
+@mixin break($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+      $min-width: map-get($breakpoints, $breakpoint);
+      @media screen and (min-width: $min-width) {
+        @content;
+      }
+    } @else {
+      @error "Invalid breakpoint: #{$breakpoint}.";
+    }
+  }
+
+
+  @mixin myContainer{
+  max-width: 1020px;
+  margin: auto;
+}
+
+@mixin text-gradient {
+  // background: linear-gradient(90deg, #2855A4 0%, #2373FF 100%);
+  background: linear-gradient(90deg, var(--color-darkest-blue),var(--accent-color)) ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@mixin line-clamp($lines) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

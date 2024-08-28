@@ -1,6 +1,6 @@
-@import "src/styles/abstracts/mixins";
+// @import "src/styles/abstracts/mixins";
 @import "src/styles/base/typography";
-@import "src/styles/base/global";
+// @import "src/styles/base/global";
 
 .skills{
     &-col1{
@@ -11,11 +11,11 @@
             @include text-gradient;
         }
         &__heading{
-            font-size: $font-size-28-responsive;
+            font-size: var(--font-size-28-responsive);
             margin-bottom: 1rem;
         }
         &__para{
-            font-size: $font-size-16-responsive;
+            font-size: var(--font-size-16-responsive);
             line-height: 21.78px;
         }
 
@@ -24,11 +24,11 @@
 
     &-col2{
         &__heading{
-            font-size: $font-size-24-responsive;
+            font-size: var(--font-size-24-responsive);
             margin-bottom: 1.5rem;
         }
         .tab__heading{
-            font-size: $font-size-18-responsive;
+            font-size: var(--font-size-18-responsive);
         }
         &__linkWrapper{
             // max-height: 64vh;
@@ -36,9 +36,9 @@
             
         }
         .nav{
-            border: 1px solid $card-border;
+            border: 1px solid var(--card-border);
             // background-color: green;
-            border-radius: $border-radius-lg;
+            border-radius: var(--border-radius-lg);
             @include break('lg'){
       
                 min-width: 210px;
@@ -50,12 +50,12 @@
             }
             &-link{
                 border-radius: 4px;
-                color: $tab-link;
+                color: var(--tab-link) ;
                 min-width:100%;
             }
             &-link.active{
                 color: white;
-                background-color: $color-bright-blue;
+                background-color: var(--color-bright-blue);
                 .icons{
                     display: inline-block !important;
                     transition: all 500ms linear;

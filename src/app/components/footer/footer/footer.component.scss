@@ -1,18 +1,20 @@
 // bg-#262626
 @import 'src/styles/base/typography';
-li,a{cursor: pointer;}
+// @import 'src/styles/abstracts/mixins';
 .footer{
     padding: 5% 5% 0 5%;
     background-color:#262626;
-    font-size: $font-size-12-responsive;
+    font-size: var(--font-size-12-responsive);
+    li,a{cursor: pointer;}
+    
     &-about{
 
         @include break('sm'){
-            font-size: $font-size-16-responsive;
+            font-size: var(--font-size-16-responsive);
         }
     }
     &-icon{
-        font-size: $font-size-18-responsive;
+        font-size: var(--font-size-18-responsive);
     }
     &__logo{
         max-width: 300px;
@@ -33,14 +35,14 @@ li,a{cursor: pointer;}
 
 
     &-courses__heading{
-        font-size: $font-size-18-responsive;
+        font-size: var(--font-size-18-responsive);
     }
     &-courses__link{
-        font-size: $font-size-12-responsive;
+        font-size: var(--font-size-12-responsive);
         padding: 5px 16px 5px 16px;
 
         @include break('sm'){
-            font-size: $font-size-14-responsive;
+            font-size: var(--font-size-14-responsive);
             padding: 6px 19px 6px 19px;
         }
         background-color: #2E2E31;
@@ -49,7 +51,7 @@ li,a{cursor: pointer;}
         .ul .footer-type__link:not(:first-child)::before {
             @include break('sm') {
               content: "•"; 
-              font-size: $font-size-16-responsive; 
+              font-size: var(--font-size-16-responsive); 
               margin-right: 10px; 
             }
           }
@@ -57,7 +59,7 @@ li,a{cursor: pointer;}
         &__link{
             
             @include break('sm'){
-                font-size: $font-size-16-responsive;
+                font-size: var(--font-size-16-responsive);
             }
             color: #71717A;
             transition: all 300ms ease;
@@ -68,9 +70,9 @@ li,a{cursor: pointer;}
     }
 
     &-copyright{
-        font-size: $font-size-10-responsive;
+        font-size: var(--font-size-10-responsive);
         @include break('sm'){
-            font-size: $font-size-12-responsive;
+            font-size: var(--font-size-12-responsive);
         }
     }
 }

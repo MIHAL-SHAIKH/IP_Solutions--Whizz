@@ -1,5 +1,5 @@
 @import "src/styles/base/typography";
-@import "src/styles/abstracts/mixins";
+// @import "src/styles/abstracts/mixins";
 
 .review-card{
     max-width: 240px;
@@ -30,25 +30,25 @@
     }
 
     &__name{
-        font-size: $font-size-14-responsive;
+        font-size: var(--font-size-14-responsive);
         @include break('md'){
-            font-size: $font-size-16-responsive;
+            font-size: var(--font-size-16-responsive);
         }
     }
     &__profe{
-        font-size: $font-size-10-responsive;
+        font-size: var(--font-size-10-responsive);
         
         @include break('md'){
-            font-size: $font-size-12-responsive;
+            font-size: var(--font-size-12-responsive);
         }
     }
     &__para{
-        font-size: $font-size-12-responsive;
+        font-size: var(--font-size-12-responsive);
         @include line-clamp(4);
         
         
         @include break('md'){
-            font-size: $font-size-14-responsive;
+            font-size: var(--font-size-14-responsive);
             -webkit-line-clamp: 6;
         }
         @include break('lg'){

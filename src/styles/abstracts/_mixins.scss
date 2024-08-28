@@ -1,41 +1,6 @@
-@import '../abstracts/functions';
-
-$breakpoints: (
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl:1400px
-);
-
-@mixin break($breakpoint) {
-    @if map-has-key($breakpoints, $breakpoint) {
-      $min-width: map-get($breakpoints, $breakpoint);
-      @media screen and (min-width: $min-width) {
-        @content;
-      }
-    } @else {
-      @error "Invalid breakpoint: #{$breakpoint}.";
-    }
-  }
+// @import '../base/typography';
 
 
-  @mixin myContainer{
-  max-width: 1020px;
-  margin: auto;
-}
-
-@mixin text-gradient {
-  // background: linear-gradient(90deg, #2855A4 0%, #2373FF 100%);
-  background: linear-gradient(90deg, $color-darkest-blue, $accent-color);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-@mixin line-clamp($lines) {
-  display: -webkit-box;
-  -webkit-line-clamp: $lines;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
+// *{
+//   background-color: rgba(255, 0, 0, 0.1);
+//   }
