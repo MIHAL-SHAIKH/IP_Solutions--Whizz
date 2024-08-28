@@ -4,13 +4,13 @@
 .review-card{
     max-width: 240px;
 
-    @include break('md'){
-        max-width: 320px;
-    }
+    // @include break('md'){
+    //     max-width: 320px;
+    // }
     
-    @include break('lg'){
-        max-width: 360px;
-    }
+    // @include break('lg'){
+    //     max-width: 360px;
+    // }
 
     &__img{
 
@@ -18,55 +18,55 @@
         width: 35px;
         aspect-ratio: 1;
 
-        @include break('md'){
-            height: 42px;
-            width: 42px;
-        }
+        // @include break('md'){
+        //     height: 42px;
+        //     width: 42px;
+        // }
 
-        @include break('lg'){
-            height: 50px;
-            width: 50px;
-        }
+        // @include break('lg'){
+        //     height: 50px;
+        //     width: 50px;
+        // }
     }
 
     &__name{
         font-size: var(--font-size-14-responsive);
-        @include break('md'){
-            font-size: var(--font-size-16-responsive);
-        }
+        // @include break('md'){
+        //     font-size: var(--font-size-16-responsive);
+        // }
     }
     &__profe{
         font-size: var(--font-size-10-responsive);
         
-        @include break('md'){
-            font-size: var(--font-size-12-responsive);
-        }
+        // @include break('md'){
+        //     font-size: var(--font-size-12-responsive);
+        // }
     }
     &__para{
         font-size: var(--font-size-12-responsive);
         @include line-clamp(4);
         
         
-        @include break('md'){
-            font-size: var(--font-size-14-responsive);
-            -webkit-line-clamp: 6;
-        }
-        @include break('lg'){
-            -webkit-line-clamp: 10;
-        }
+        // @include break('md'){
+        //     font-size: var(--font-size-14-responsive);
+        //     -webkit-line-clamp: 6;
+        // }
+        // @include break('lg'){
+        //     -webkit-line-clamp: 10;
+        // }
     }
     &__logo{
 
         width: 50px;
         max-height: 40px;
         
-        @include break('md'){            
-          width: 85px;
-          max-height: 70px;
-        }
-        @include break('lg'){
-            width: 100px;
-            max-height: 80px;
-        }
+        // @include break('md'){            
+        //   width: 85px;
+        //   max-height: 70px;
+        // }
+        // @include break('lg'){
+        //     width: 100px;
+        //     max-height: 80px;
+        // }
     }
 }

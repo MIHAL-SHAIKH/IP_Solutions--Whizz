@@ -10,15 +10,15 @@
         background-repeat: no-repeat;
         background-size: cover;
         
-        @include break('sm'){
-        background-image: url('/assets/cardBanner1.png');
-        height: 218px;
-        min-height: 192px;
-        }
+        // @include break('sm'){
+        // background-image: url('/assets/cardBanner1.png');
+        // height: 218px;
+        // min-height: 192px;
+        // }
     
-        @include break('lg'){
-            border-radius: var(--border-radius-lg);
-        }
+        // @include break('lg'){
+        //     border-radius: var(--border-radius-lg);
+        // }
     }
     &-img{
         max-width: 316px;
@@ -27,16 +27,16 @@
     
     &__header{
         font-size: var(--font-size-28-responsive);
-        @include break('md'){
-            font-size: var(--font-size-30-responsive);
-        }
+        // @include break('md'){
+        //     font-size: var(--font-size-30-responsive);
+        // }
     }
     &__para{
         font-size: var(--font-size-14-responsive);
         line-height: 17px;
-        @include break('md'){
-            line-height: 20px;
-        }
+        // @include break('md'){
+        //     line-height: 20px;
+        // }
     }
     &-text-wrapper{
         max-width: 380px;

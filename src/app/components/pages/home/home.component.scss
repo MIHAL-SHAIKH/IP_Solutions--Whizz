@@ -18,28 +18,29 @@
       left: 5%;
       top: 12%;
       
-      @include break('sm'){
+      // @include break('sm'){
         
-        top: 16%;
-        max-width: 430px;
-      }
+      //   top: 16%;
+      //   max-width: 430px;
+      // }
       
-      @include break('lg'){
-        max-width: 600px;
-      }
+      // @include break('lg'){
+      //   max-width: 600px;
+      // }
         &__heading{
           line-height: 0.9em;
-          @include break('sm'){
-            font-size: 50px;
-          }
-          @include break('md'){
+          // @include break('sm'){
+          //   font-size: 50px;
+          // }
+          // @include break('md'){
            
-            font-size: 60px;
-          }
-          @include break('lg') {
-            font-size: var(--font-size-85-responsive);
-            }
+          //   font-size: 60px;
+          // }
+          // @include break('lg') {
+          //   font-size: var(--font-size-85-responsive);
+          //   }
             font-size: 40px;
+            // color: red;
         }
         &__para{
             font-size: var(--font-size-16-responsive);
@@ -67,22 +68,22 @@
     padding: 25px 0px;
 
 
-    @include break('md'){
-    padding: 45px 0px;
+    // @include break('md'){
+    // // padding: 45px 0px;
 
-      &:before, &:after {
-        position: absolute;
-        top: 0;
-        content: '';
-        width: 250px;
-        height: 100%;
-        z-index: 2;
-      }
+    // //   &:before, &:after {
+    // //     position: absolute;
+    // //     top: 0;
+    // //     content: '';
+    // //     width: 250px;
+    // //     height: 100%;
+    // //     z-index: 2;
+    // //   }
   
-    }
+    // }
 
     &_items {
-      animation: 30s slides infinite linear;
+      animation: 25s slides infinite linear;
       &-img{
         height: 150px;
       }
@@ -136,9 +137,9 @@
       font-size: var(--font-size-48-responsive);
       color: var(--red);
       
-      @include break('sm'){
-        font-size: 60px;
-      }
+      // @include break('sm'){
+      //   font-size: 60px;
+      // }
     }
     &__name{
       color: #6B7280;
@@ -157,13 +158,13 @@
     max-width: 380px;
 
 
-    @include break('md'){
-      max-width: 430px;
-    }
+    // @include break('md'){
+    //   max-width: 430px;
+    // }
     
-    @include break('lg'){
-      max-width: 505px;
-    }
+    // @include break('lg'){
+    //   max-width: 505px;
+    // }
     img{
     border-radius: var(--card-img-border-radius-lg) ;
     }
@@ -173,9 +174,9 @@
   }
   &__heading{
     font-size: var(--font-size-20-responsive);
-    @include break("sm"){
-      font-size: var(--font-size-24-responsive);
-    }
+    // @include break("sm"){
+    //   font-size: var(--font-size-24-responsive);
+    // }
   }
   &__subHeading{
     font-size: var(--font-size-18-responsive);
@@ -188,19 +189,19 @@
 // why choose section started
 .choose{
   @include myContainer;
-  @include break('md'){
-    border-radius: var(--border-radius-lg);
-  }
+  // @include break('md'){
+  //   border-radius: var(--border-radius-lg);
+  // }
   background-image: url('../../../../../src/assets/card2Bannersm.png');
   // min-height: 453px;
   background-size: cover;
   background-position: top;
   
-  @include break('sm'){
+  // @include break('sm'){
     
-    min-height: 473px;
-    background-image: url('../../../../../src/assets/cardBanner2.png');
-  }
+  //   min-height: 473px;
+  //   background-image: url('../../../../../src/assets/cardBanner2.png');
+  // }
 
 
   &__para{
@@ -215,10 +216,10 @@
 
     max-width: 280px;
     min-height: 200px;
-    @include break('md'){
-      max-width: 500px;
-      min-height: 260px
-    }
+    // @include break('md'){
+    //   max-width: 500px;
+    //   min-height: 260px
+    // }
   }
 }
 
@@ -226,12 +227,12 @@
   padding: 6% 0;
   &-header{
     font-size: var(--font-size-28-responsive);
-    @include break('md'){
-      font-size: var(--font-size-30-responsive);
-    }
-    @include break('lg'){
-      font-size: var(--font-size-35-responsive);
-    }
+    // @include break('md'){
+    //   font-size: var(--font-size-30-responsive);
+    // }
+    // @include break('lg'){
+    //   font-size: var(--font-size-35-responsive);
+    // }
     margin-bottom: 3%;
   }
   &-card_infi{
@@ -245,22 +246,22 @@
     &-logo{
       max-width: 120px;
       
-      @include break('sm'){
-          max-width: 220px;
-        }
+      // @include break('sm'){
+      //     max-width: 220px;
+      //   }
 
         img{
           max-width: 100px;
-          @include break('sm'){
-            max-width: 190px;
-            }
+          // @include break('sm'){
+          //   max-width: 190px;
+          //   }
         }
     }
     &-header{
       font-size: var(--font-size-24-responsive);
-      @include break('sm'){
-        font-size: var(--font-size-28-responsive);
-      }
+      // @include break('sm'){
+      //   font-size: var(--font-size-28-responsive);
+      // }
     }
 }
 // ask
@@ -268,14 +269,14 @@
 .ask{
   .accordion{
     font-size: var(--font-size-12-responsive);
-    @include break('md'){
-      font-size: var(--font-size-14-responsive);
-    }
+    // @include break('md'){
+    //   font-size: var(--font-size-14-responsive);
+    // }
     &-button{
       font-size: var(--font-size-12-responsive);
-      @include break('md'){
-        font-size: var(--font-size-14-responsive);
-      }
+      // @include break('md'){
+      //   font-size: var(--font-size-14-responsive);
+      // }
     }
   }
   max-width: 740px;
@@ -284,23 +285,23 @@
   }
   .accordion-rank{
     font-size: var(--font-size-14-responsive);
-    @include break('md'){
-      font-size: var(--font-size-16-responsive);
-    }
+    // @include break('md'){
+    //   font-size: var(--font-size-16-responsive);
+    // }
   }
   &__heading{
     font-size: var(--font-size-24-responsive);
 
-    @include break('md'){
-    font-size: var(--font-size-28-responsive);
-    }
+    // @include break('md'){
+    // font-size: var(--font-size-28-responsive);
+    // }
   }
   .got-more{
     font-size: var(--font-size-12-responsive);
 
-    @include break('md'){
-      font-size: var(--font-size-14-responsive);
-    }
+    // @include break('md'){
+    //   font-size: var(--font-size-14-responsive);
+    // }
   }
 }
 
@@ -310,29 +311,264 @@
 /* Small devices (sm) */
 @media screen and (min-width: 576px) {
   /* Your CSS rules here */
-  // .landing{
-  //   min-height: 80svh;
-  //   &-textWrapper{
-  //     top: 16%;
-  //     max-width: 430px;
-  //   }
-  // }
+  .landing{
+    min-height: 80svh;
+    &-textWrapper{
+      top: 16%;
+      max-width: 430px;
+    }
+    &__heading{
+      font-size: 50px;
+    }
+  }
+  .counter-count__number{
+    font-size: 60px;
+  }
+  .cto__heading{
+    font-size: var(--font-size-24-responsive);
+  }
+  .choose{
+    min-height: 473px;
+    background-image: url('../../../../../src/assets/cardBanner2.png');
+  }
+  .grouped-header{
+    font-size: var(--font-size-28-responsive);
+  }
+  .grouped-logo{
+    max-width: 220px;
+    img{
+      max-width: 190px;
+    }
+  }
+  .footer{
+    &-about{
+      font-size: var(--font-size-16-responsive);
+    }
+    
+    &__logo{
+      img{max-width: 160px;}
+    }
+    &-courses__link{
+      font-size: var(--font-size-14-responsive);
+      padding: 6px 19px 6px 19px;
+    }
+  }
+  &-type{
+    .ul .footer-type__link:not(:first-child)::before {
+        
+        content: "•"; 
+        font-size: var(--font-size-16-responsive); 
+        margin-right: 10px; 
+      }
+    &__link{ 
+        font-size: var(--font-size-16-responsive);
+      }
+    }
+    &-copyright{
+      font-size: var(--font-size-12-responsive);
+    }
+    .skills{
+      &-col2{
+        &-grid{
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+    .started{
+      &-container{
+        background-image: url('/assets/cardBanner1.png');
+        height: 218px;
+        min-height: 192px;
+        }
+    }
+
 }
 
 /* Medium devices (md) */
 @media screen and (min-width: 768px) {
   .landing{
     min-height: 70svh;
+
+    &-textWrapper__heading{
+      font-size: 60px;
+    }
+  }
+  .logos{
+    padding: 45px 0px;
+
+    &:before, &:after {
+      position: absolute;
+      top: 0;
+      content: '';
+      width: 250px;
+      height: 100%;
+      z-index: 2;
+    }
+  }
+  .cto-img{
+    max-width: 430px;
+  }
+  .choose{
+    border-radius: var(--border-radius-lg);
+    &-img{
+      max-width: 500px;
+      min-height: 260px
+    }
+  }
+  .learner-header{
+    font-size: var(--font-size-30-responsive);
+  }
+  .ask{
+    .accordion{
+      font-size: var(--font-size-14-responsive);
+    }
+    .accordion-rank{
+      font-size: var(--font-size-16-responsive);
+    }
+    &-button{
+      font-size: var(--font-size-14-responsive);
+    }
+    &__heading{
+      font-size: var(--font-size-28-responsive);
+    }
+    .got-more{
+      font-size: var(--font-size-14-responsive);
+    }
+  }
+  .review-card{
+    max-width: 320px;
+    &__img{
+      height: 42px;
+      width: 42px;
+    }
+    &__name{
+      height: 50px;
+      width: 50px;
+    }
+    &__profe{
+      font-size: var(--font-size-12-responsive);
+    }
+    &__para{
+      font-size: var(--font-size-14-responsive);
+      -webkit-line-clamp: 6;
+    }
+    &__logo{
+      width: 85px;
+      max-height: 70px;
+    }
+  }
+  .footer{
+    
+    &__logo{
+      img{
+        max-width: 200px;
+    }
+    }
+  }
+  .skills{
+    &-col2{
+      &-grid{
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+  .started{
+    &__header{
+      font-size: var(--font-size-30-responsive);
+    }
+    &__para{
+      line-height: 20px;
+    }
   }
 }
 
 /* Large devices (lg) */
 @media screen and (min-width: 992px) {
-  /* Your CSS rules here */
+  .landing-textWrapper{
+    max-width: 600px;
+    &__heading{
+      font-size: var(--font-size-85-responsive);
+    }
+  }
+  .cto-img{
+    max-width: 505px;
+  }
+  .learner-header{
+    font-size: var(--font-size-35-responsive);
+  }
+  .review-card{
+    max-width: 360px;
+
+    &__img{
+      height: 50px;
+      width: 50px;
+    }
+    &__para{
+      -webkit-line-clamp: 10;
+    }
+    &__logo{
+      width: 100px;
+      max-height: 80px;
+    }
+  }
+  .skills{
+    &-col2{
+      .nav{
+        min-width: 210px;
+        min-height: 480px;
+      }
+    }
+  }
+  .started{
+    &-container{
+      border-radius: var(--border-radius-lg);
+      }
+  }
 }
 
 /* Extra large devices (xl) */
 @media screen and (min-width: 1200px) {
+  .landing-textWrapper{
+    max-width: 700px;
+    &__heading{
+      font-size: 85px;
+    }
+  }
+  .card--small{
+    .card-title{
+      font-size: 1.25rem;
+    }
+    &__para{
+      -webkit-line-clamp: 4;
+    }
+    &__img{
+      height: 50px;
+      width: 50px;
+    }
+    &__hours,&__rating{
+      font-size:var(--font-size-12-responsive);
+    }
+    .skills{
+      &-col2{
+        .nav{
+          min-width: 300px;
+          min-height: 500px;
+        }
+      }
+    }
+  }
+  .grid-container {
+    grid-template-columns: 3fr 6fr 3fr;
+
+    .cols{
+      .cardSm-grid{
+        gap: 15px;
+        }
+    }
+    }
+    .mega-menu {
+      padding: 5% 4%;
+    }
   /* Your CSS rules here */
 }
 

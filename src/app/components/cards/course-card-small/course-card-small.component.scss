@@ -11,9 +11,9 @@
         @include line-clamp(1);
         font-size: 1.10rem;
         
-        @include break('xl'){
-            font-size: 1.25rem;
-        }
+        // @include break('xl'){
+        //     font-size: 1.25rem;
+        // }
     }
 
     &__para{
@@ -21,9 +21,9 @@
         font-size:var(--font-size-12-responsive);
         @include line-clamp(3);
 
-        @include break('xl'){
-            -webkit-line-clamp: 4;
-        }
+        // @include break('xl'){
+        //     -webkit-line-clamp: 4;
+        // }
     }
     &__img{
         height: 45px;
@@ -31,16 +31,16 @@
         background-color: #6B7280;
         border-radius: 8px;
 
-        @include break('xl'){
-            height: 50px;
-            width: 50px;
-        }
+        // @include break('xl'){
+        //     height: 50px;
+        //     width: 50px;
+        // }
     }
     &__hours,&__rating{
         font-size:var(--font-size-10-responsive);
 
-        @include break('xl'){
-            font-size:var(--font-size-12-responsive);
-        }
+        // @include break('xl'){
+        //     font-size:var(--font-size-12-responsive);
+        // }
     }
 }

@@ -216,24 +216,24 @@ a:hover {
     color: var(--link-hover-color);
 }
 
-$breakpoints: (
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl:1400px
-);
+// $breakpoints: (
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px,
+//   xxl:1400px
+// );
 
-@mixin break($breakpoint) {
-    @if map-has-key($breakpoints, $breakpoint) {
-      $min-width: map-get($breakpoints, $breakpoint);
-      @media screen and (min-width: $min-width) {
-        @content;
-      }
-    } @else {
-      @error "Invalid breakpoint: #{$breakpoint}.";
-    }
-  }
+// @mixin break($breakpoint) {
+//     @if map-has-key($breakpoints, $breakpoint) {
+//       $min-width: map-get($breakpoints, $breakpoint);
+//       @media screen and (min-width: $min-width) {
+//         @content;
+//       }
+//     } @else {
+//       @error "Invalid breakpoint: #{$breakpoint}.";
+//     }
+//   }
 
 
   @mixin myContainer{

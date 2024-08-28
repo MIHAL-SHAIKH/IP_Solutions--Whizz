@@ -39,15 +39,15 @@
             border: 1px solid var(--card-border);
             // background-color: green;
             border-radius: var(--border-radius-lg);
-            @include break('lg'){
+            // @include break('lg'){
       
-                min-width: 210px;
-                min-height: 480px;
-            }
-            @include break('xl'){
-                min-width: 300px;
-                min-height: 500px;
-            }
+            //     min-width: 210px;
+            //     min-height: 480px;
+            // }
+            // @include break('xl'){
+            //     min-width: 300px;
+            //     min-height: 500px;
+            // }
             &-link{
                 border-radius: 4px;
                 color: var(--tab-link) ;
@@ -68,13 +68,13 @@
             grid-template-columns: repeat(1, 1fr);
             align-items: stretch;
 
-            @include break('sm'){
-            grid-template-columns: repeat(2, 1fr);
-            }
+            // @include break('sm'){
+            // grid-template-columns: repeat(2, 1fr);
+            // }
 
-            @include break('md'){
-                grid-template-columns: repeat(3, 1fr);
-            }
+            // @include break('md'){
+            //     grid-template-columns: repeat(3, 1fr);
+            // }
             // gap: 16px; 
         }
     }
