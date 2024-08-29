@@ -1,16 +1,45 @@
-@import "src/styles/base/typography.css";
+@import "./../../../../styles/base/_typography.css";
 /* // @import "src/styles/abstracts/mixins"; */
+
+.review-card {
+    max-width: 240px;
+}
+
+.review-card__img {
+    height: 35px;
+    width: 35px;
+    aspect-ratio: 1;
+}
+
+.review-card__name {
+    font-size: var(--font-size-14-responsive);
+}
+
+.review-card__profe {
+    font-size: var(--font-size-10-responsive);
+}
+
+.review-card__para {
+    font-size: var(--font-size-12-responsive);
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.review-card__logo {
+    width: 50px;
+    max-height: 40px;
+}
+
+
+
+/* 
 
 .review-card{
     max-width: 240px;
 
-    /* // @include break('md'){
-    //     max-width: 320px;
-    // }
-    
-    // @include break('lg'){
-    //     max-width: 360px;
-    // } */
 
     &__img{
 
@@ -18,60 +47,29 @@
         width: 35px;
         aspect-ratio: 1;
 
-        /* // @include break('md'){
-        //     height: 42px;
-        //     width: 42px;
-        // }
-
-        // @include break('lg'){
-        //     height: 50px;
-        //     width: 50px;
-        // } */
     }
 
     &__name{
         font-size: var(--font-size-14-responsive);
-        /* // @include break('md'){
-        //     font-size: var(--font-size-16-responsive);
-        // } */
+
     }
     &__profe{
         font-size: var(--font-size-10-responsive);
-        
-        /* // @include break('md'){
-        //     font-size: var(--font-size-12-responsive);
-        // } */
+
     }
     &__para{
         font-size: var(--font-size-12-responsive);
-        /* // @include line-clamp(4); */
         display: -webkit-box;
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
         
-        
-        /* // @include break('md'){
-        //     font-size: var(--font-size-14-responsive);
-        //     -webkit-line-clamp: 6;
-        // }
-        // @include break('lg'){
-        //     -webkit-line-clamp: 10;
-        // } */
     }
     &__logo{
 
         width: 50px;
         max-height: 40px;
         
-        /* // @include break('md'){            
-        //   width: 85px;
-        //   max-height: 70px;
-        // }
-        // @include break('lg'){
-        //     width: 100px;
-        //     max-height: 80px;
-        // } */
     }
-}
+} */

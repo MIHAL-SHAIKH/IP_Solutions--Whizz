@@ -1,9 +1,46 @@
 /* // @import "src/styles/base/global"; */
-@import "src/styles/base/typography.css";
+@import "./../../../../styles/base/_typography.css";
 /* // @import "src/styles/abstracts/mixins"; */
 
+.course-card {
+    max-width: 295px;
+    transition: all 300ms;
+    max-height: 422px;
+    border-color: rgba(228, 230, 234, 1);
+}
 
-.course-card{
+.course-card:hover {
+    box-shadow: 0px 16px 32px -8px rgba(12, 12, 13, 0.4);
+}
+
+.course-card__img {
+    border-radius: var(--border-radius-md);
+}
+
+.course-card__title {
+    font-size: var(--font-size-18-responsive);
+}
+
+.course-card__para {
+    font-size: var(--font-size-12-responsive);
+    color: #6b7280;
+    line-height: 14.52px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+}
+
+.course-card__enroll {
+    border-radius: var(--border-radius-sm);
+}
+
+.course-card__rating,
+.course-card__time {
+    font-size: var(--font-size-12-responsive);
+}
+
+/* .course-card{
     max-width: 295px;
     transition: all 300ms;
     max-height: 422px;
@@ -34,4 +71,4 @@
     &__rating,&__time{
         font-size: var(--font-size-12-responsive);
     }
-}
+} */

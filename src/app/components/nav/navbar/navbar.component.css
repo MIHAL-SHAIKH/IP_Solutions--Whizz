@@ -1,9 +1,9 @@
 /* // @import './../../../../styles/base/global';
 // @import './../../../../styles/abstracts/variables';
 // @import './../../../../styles/abstracts/mixins'; */
-@import '../../../../styles/base/_typography.css';
+@import './../../../../styles/base/_typography.css';
 /* @import './../../../../styles/base/typography.css'; */
-.navbar {
+/* .navbar {
   z-index: 999;
   transition: transform 0.3s ease-in-out;
   
@@ -44,7 +44,50 @@
       }
     }
   }
+} */
+.navbar {
+  z-index: 999;
+  transition: transform 0.3s ease-in-out;
 }
+
+.navbar-icon {
+  width: 120px;
+  height: auto;
+  aspect-ratio: 5.76;
+}
+
+.navbar-container-wrapper {
+  max-width: 1420px;
+}
+
+.navbar-toggler {
+  height: 40px;
+  width: 40px;
+}
+
+.navbar .courses-dropdown__btn {
+  border-radius: var(--border-radius-lg);
+  background-color: var(--background-color);
+  font-size: var(--font-size-14-responsive);
+}
+
+.navbar .courses-dropdown__btn::after {
+  display: none;
+}
+
+.navbar .courses-dropdown__menu {
+  font-size: var(--font-size-14-responsive);
+}
+
+.navbar .courses-dropdown__item {
+  cursor: pointer;
+}
+
+.navbar .courses-dropdown__item:hover {
+  background-color: var(--background-color);
+  color: var(--text-color) !important;
+}
+
 .navbar-hidden {
   transform: translateY(-100%);
 }
@@ -52,7 +95,7 @@
 .navbar-visible {
   transform: translateY(0);
 }
-.search-wrapper {
+/* .search-wrapper {
     
     .search-input {
       padding-left: 2.5rem;
@@ -71,13 +114,126 @@
       color: var(--border); 
       pointer-events: none; 
     }
-  }
+  } */
+  .search-wrapper {
+    position: relative; /* Ensure proper positioning of child elements */
+}
+
+.search-input {
+    padding-left: 2.5rem;
+    border: 1px solid var(--border-light);
+    outline: none;
+    border-radius: var(--border-radius-lg);
+}
+
+.search-input:focus {
+    border-color: var(--border-light);
+    box-shadow: none;
+}
+
+.search-icon {
+    position: absolute;
+    left: 0.75rem;
+    color: var(--border);
+    pointer-events: none;
+}
+
 
   .dropdown-toggle::after{
     display: none;
   }
   
   @media all and (min-width: 992px) {
+
+    .dropdown-menu {
+        width: 13rem;
+    }
+
+    .mega-submenu {
+        left: 100%;
+        top: 0;
+        min-width: 25rem;
+    }
+
+    .mega-menu {
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 3.8%;
+    }
+
+    .mega-menu__heading {
+        font-size: var(--font-size-35-responsive);
+    }
+
+    .mega-menu__links {
+        all: unset;
+        color: #6B7280;
+        padding: 11px 10px;
+        border-radius: 4px;
+        transition: all 300ms;
+    }
+
+    .mega-menu__links.active {
+        background-color: #3B81F5;
+        color: white;
+    }
+
+    .mega-menu__links.active .icons {
+        display: inline-block !important;
+    }
+
+    .dropdown-menu li {
+        position: relative;
+    }
+
+    .dropdown-menu .submenu {
+        display: none;
+        left: 100%;
+        top: 0;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 3fr 7fr 2fr;
+        gap: 16px;
+    }
+
+    .grid-container .cols {
+        padding: 20px;
+    }
+
+    .grid-container .cols-cards {
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-color: var(--card-border-color);
+    }
+
+    .grid-container .cols-popular__heading {
+        font-size: var(--font-size-16-responsive);
+    }
+
+    .grid-container .cardSm-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        justify-items: center;
+    }
+
+    .grid-container > :only-child {
+        grid-column: span 1;
+    }
+
+    .grid-container > :nth-child(2):last-child {
+        grid-column: span 3;
+    }
+
+    .grid-container > :first-child:nth-last-child(2) {
+        grid-column: span 3;
+    }
+}
+
+  /* @media all and (min-width: 992px) {
     .dropdown-menu {
       width: 13rem;
     }
@@ -93,9 +249,7 @@
       width: 100%;
       padding: 3.8%;
 
-      /* // @include break('xl'){
-      //   padding: 5% 4%;
-      // } */
+     
       &__heading{
         font-size: var(--font-size-35-responsive);
       }
@@ -133,10 +287,7 @@
 
       gap: 16px; 
 
-      /* // @include break('xl') {
-      //   grid-template-columns: 3fr 6fr 3fr;
-      // } */
-
+  
 
       .cols {
 
@@ -159,9 +310,7 @@
           gap: 10px;
           justify-items: center;
           
-          /* // @include break('xl'){
-          //   gap: 15px;
-          // } */
+  
         }
       }
     }
@@ -180,7 +329,7 @@
     }
     
     
-  }
+  } */
   .search-wrapper {
     position: relative;
   }
