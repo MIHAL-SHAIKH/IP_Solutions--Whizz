@@ -2,43 +2,6 @@
 @import "./../../../../styles/base/_typography.css";
 /* // @import "src/styles/abstracts/mixins"; */
 
-.card--small {
-    min-width: 200px;
-    border-radius: var(--card-border-radius);
-    border-color: var(--card-border-color);
-    max-width: 20rem;
-}
-
-.card--small .card-title {
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 1.10rem;
-}
-
-.card--small__para {
-    color: #6B7280;
-    font-size: var(--font-size-12-responsive);
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.card--small__img {
-    height: 45px;
-    width: 45px;
-    background-color: #6B7280;
-    border-radius: 8px;
-}
-
-.card--small__hours,
-.card--small__rating {
-    font-size: var(--font-size-10-responsive);
-}
 
 
 /* .card--small{

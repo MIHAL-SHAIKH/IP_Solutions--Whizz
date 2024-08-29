@@ -1,37 +1,6 @@
 @import "./../../../../styles/base/_typography.css";
 /* // @import "src/styles/abstracts/mixins"; */
 
-.review-card {
-    max-width: 240px;
-}
-
-.review-card__img {
-    height: 35px;
-    width: 35px;
-    aspect-ratio: 1;
-}
-
-.review-card__name {
-    font-size: var(--font-size-14-responsive);
-}
-
-.review-card__profe {
-    font-size: var(--font-size-10-responsive);
-}
-
-.review-card__para {
-    font-size: var(--font-size-12-responsive);
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.review-card__logo {
-    width: 50px;
-    max-height: 40px;
-}
 
 
 

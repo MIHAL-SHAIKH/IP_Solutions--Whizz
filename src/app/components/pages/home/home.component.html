@@ -28,7 +28,7 @@
   <div class="logos_items d-flex gap-5">
     <div *ngFor="let num of [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]">
       <img
-        class="logos_items-img"
+        class="logos-items-img"
         src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fencrypted-tbn1.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcQnN19E18xtM23VtnQAxytEgzdujZ3XKCtnFrfzdXp-tBn1TKKJ&psig=AOvVaw08mAbvAmg0Q3pZ3Hw47TtI&ust=1724304254172000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKjEm4ishYgDFQAAAAAdAAAAABAE"
       />
     </div>
@@ -170,14 +170,14 @@
       <div class="text-start text-white py-4 p-lg-5 pe-0">
         <h3 class="choose__heading mb-4">Why choose IPsolutions?</h3>
         <div *ngFor="let i of [1, 1, 1, 1, 1]">
-          <div class="choose__para d-flex mb-2 fw-normal">
+          <div class="choose__para d-flex align-items-center mb-2 fw-normal">
             <span class="choose__para-icon me-3 h-100 align-self-start"
-              ><i class="ri-check-double-line"></i
-            ></span>
-            <span
+              ><i class="ri-check-double-line"></i>
+            </span>
+            <p class="mb-0"
               >Biggest Infrastructure ructure for Cisco certification
-              training</span
-            >
+              training
+              </p>
           </div>
         </div>
       </div>
@@ -242,7 +242,7 @@
         <div class="accordion-item">
           <div class="accordion-header">
             <button
-              class="accordion-button"
+              class="accordion-button text-black bg-transparent"
               type="button"
               data-bs-toggle="collapse"
               [attr.data-bs-target]="'#collapse' + i"
@@ -250,6 +250,9 @@
             >
               <span class="accordion-rank fw-semibold me-2 text-uppercase">Q.</span>
               Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit?
+              <span class="remix-icon ms-auto">
+                <i class="ri ri-arrow-down-s-line remix-icon"></i>
+              </span>
             </button>
           </div>
           <div

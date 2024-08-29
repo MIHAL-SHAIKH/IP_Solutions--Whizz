@@ -30,9 +30,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/variable.css",
               "src/styles/base/_typography.css",
-              "src/home.css"
+              "src/home.css",
+              "src/page.css",
+              "src/media.css"
             ]
           
           },
